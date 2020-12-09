@@ -1,0 +1,123 @@
+
+global:
+  ############################################################
+  #  addReleaseNameToResource: Provides global ability to add
+  #                            names to kubernetes resources
+  #      <not-set or any val>: No use of Release.Name ** DEFAULT **
+  #                    append: Appends the Release.Name
+  #                   prepend: Prepends the Release.Name
+  ############################################################
+  addReleaseNameToResource: prepend
+
+  ############################################################
+  # Ingress
+  #
+  #          ingress.enabled: {true | false}
+  # ingress.addReleaseToHost: {prepend | append | subdomain | none}
+  #    ingress.defaultDomain: Replaces with "_defaultDomain_" in host fields
+  # ingress.defaultTlsSecret: Replaces with "_defaultTlsSecret_" in tls.secretName
+  ############################################################
+  ingress:
+    addReleaseNameToHost: subdomain
+    enabled: true
+    defaultDomain: "ping-devops.com"
+
+############################################################
+# PingFederate Admin
+#
+############################################################
+pingfederate-admin:
+  chartEnabled: true
+  image:
+    tag: edge
+  envs:
+    PF_LOG_LEVEL: DEBUG
+    PING_IDENTITY_PASSWORD: 2FederateM0re
+    SERVER_PROFILE_URL: "https://github.com/chrisleggett/p1-sso-policy.git"
+    SERVER_PROFILE_PATH: "server-profile/pf-sso-policy-lite"
+    ###
+    # PingFed Server Settings
+    ###
+    PF_BASE_URL: https://pingfederate-engine.p1.ping-devops.com:9031
+    PF_SAML2_ENTITY_ID: docker
+    ###
+    # PingOne Tenant Settings
+    ###
+    P1_ENV_ID: 0941e685-5101-4b5d-b7c2-60d6cfdc703d
+    P1_DS_CLIENT_ID: 82fa232a-cdec-43be-a39e-fc88fe3f528f
+    P1_DS_CLIENT_SECRET: OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..Upv6fecU_BrSS5c6AMK4fw.G3xm4JWSZeyhVp6H32B4g9vBRGluHyvqaV2aLAyuTyR7v-mS5SZUPekhooH-Xi3MkRTaK9-wV8vHXPRggOYmYqdOieJSbankLxz4RA39GGA.d5xS7bg9A9QxlhuFmyszXA
+    ###
+    # BehavioSec HTML Form
+    ###
+    #BSF_AGENT_EXP: #result = #this.get(\"context.HttpRequest\").getObjectValue().getParameter(\"agent_data\") != null ? #this.get(\"context.HttpRequest\").getObjectValue().getParameter(\"agent_data\").toString() : null
+    ###
+    # IOVATION Adapter
+    ###
+    IO_SUB_ID: "\"1032102\""
+    IO_SUB_ACCOUNT: OLTP
+    IO_SUB_PASSCODE: OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..MdAIKWuKDiQO9XVVQCXUzw.GgUbSBfchJsousfD96t-kA.k1Sy3soAH8FMSAubmQHfDw
+    ###
+    # PingID Adapter
+    ###
+    PID_PROPERTIES: I0F1dG8tR2VuZXJhdGVkIGZyb20gUGluZ09uZSwgZG93bmxvYWRlZCBieSBpZD1bMTMwMTA2MV0gZW1haWw9W2J5b29uK2FkdmF1dGhuQHBpbmdpZGVudGl0eS5jb21dCiNTdW4gTm92IDAxIDE2OjIzOjQ0IE1TVCAyMDIwCnVzZV9iYXNlNjRfa2V5PVV6TXlJNzl1eElBYmNIU3pKSmVyeGZEZkE3RFB0VW50ckE1L0h3WVljZW89CnVzZV9zaWduYXR1cmU9dHJ1ZQp0b2tlbj05NTk1MGU3ZjM3NGQ0NzBkOGU1ZTg2ODljZWE0MWUxMgppZHBfdXJsPWh0dHBzOi8vaWRweG55bDNtLnBpbmdpZGVudGl0eS5jb20vcGluZ2lkCm9yZ19hbGlhcz1iNTFmYjc0Ni0wMmI2LTQ1YzctOWJkNy05ODg1ZWRmN2ZhY2MKYWRtaW5fdXJsPWh0dHBzOi8vaWRweG55bDNtLnBpbmdpZGVudGl0eS5jb20vcGluZ2lkCmF1dGhlbnRpY2F0b3JfdXJsPWh0dHBzOi8vYXV0aGVudGljYXRvci5waW5nb25lLmNvbS9waW5naWQvcHBtCg==
+
+############################################################
+# PingFederate Engine
+#
+############################################################
+pingfederate-engine:
+  chartEnabled: true
+  image:
+    tag: edge
+  envs:
+    PF_LOG_LEVEL: DEBUG
+    SERVER_PROFILE_URL: "https://github.com/chrisleggett/p1-sso-policy.git"
+    SERVER_PROFILE_PATH: "server-profile/pf-sso-policy-lite"
+    ###
+    # PingFed Server Settings
+    ###
+    PF_BASE_URL: https://pingfederate-engine.p1.ping-devops.com:9031
+    PF_SAML2_ENTITY_ID: docker
+    ###
+    # PingOne Tenant Settings
+    ###
+    P1_ENV_ID: 0941e685-5101-4b5d-b7c2-60d6cfdc703d
+    P1_DS_CLIENT_ID: 82fa232a-cdec-43be-a39e-fc88fe3f528f
+    P1_DS_CLIENT_SECRET: OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..Upv6fecU_BrSS5c6AMK4fw.G3xm4JWSZeyhVp6H32B4g9vBRGluHyvqaV2aLAyuTyR7v-mS5SZUPekhooH-Xi3MkRTaK9-wV8vHXPRggOYmYqdOieJSbankLxz4RA39GGA.d5xS7bg9A9QxlhuFmyszXA
+    ###
+    # BehavioSec HTML Form
+    ###
+    #BSF_AGENT_EXP: #result = #this.get(\"context.HttpRequest\").getObjectValue().getParameter(\"agent_data\") != null ? #this.get(\"context.HttpRequest\").getObjectValue().getParameter(\"agent_data\").toString() : null
+    ###
+    # IOVATION Adapter
+    ###
+    IO_SUB_ID: "\"1032102\""
+    IO_SUB_ACCOUNT: OLTP
+    IO_SUB_PASSCODE: OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..MdAIKWuKDiQO9XVVQCXUzw.GgUbSBfchJsousfD96t-kA.k1Sy3soAH8FMSAubmQHfDw
+    ###
+    # PingID Adapter
+    ###
+    PID_PROPERTIES: I0F1dG8tR2VuZXJhdGVkIGZyb20gUGluZ09uZSwgZG93bmxvYWRlZCBieSBpZD1bMTMwMTA2MV0gZW1haWw9W2J5b29uK2FkdmF1dGhuQHBpbmdpZGVudGl0eS5jb21dCiNTdW4gTm92IDAxIDE2OjIzOjQ0IE1TVCAyMDIwCnVzZV9iYXNlNjRfa2V5PVV6TXlJNzl1eElBYmNIU3pKSmVyeGZEZkE3RFB0VW50ckE1L0h3WVljZW89CnVzZV9zaWduYXR1cmU9dHJ1ZQp0b2tlbj05NTk1MGU3ZjM3NGQ0NzBkOGU1ZTg2ODljZWE0MWUxMgppZHBfdXJsPWh0dHBzOi8vaWRweG55bDNtLnBpbmdpZGVudGl0eS5jb20vcGluZ2lkCm9yZ19hbGlhcz1iNTFmYjc0Ni0wMmI2LTQ1YzctOWJkNy05ODg1ZWRmN2ZhY2MKYWRtaW5fdXJsPWh0dHBzOi8vaWRweG55bDNtLnBpbmdpZGVudGl0eS5jb20vcGluZ2lkCmF1dGhlbnRpY2F0b3JfdXJsPWh0dHBzOi8vYXV0aGVudGljYXRvci5waW5nb25lLmNvbS9waW5naWQvcHBtCg==
+
+############################################################
+# PingDataConsole
+#
+############################################################
+pingdataconsole:
+  chartEnabled: false
+
+############################################################
+# PingDirectory
+#
+############################################################
+pingdirectory:
+  chartEnabled: false
+  envs:
+    MAKELDIF_USERS: "20000"
+
+############################################################
+# ldap-sdk-tools
+#
+############################################################
+ldap-sdk-tools:
+  chartEnabled: false               # Enables ldap-sdk-tools Chart

@@ -1,0 +1,3654 @@
+{
+    "metadata": {
+      "pfVersion": "10.1.2.0"
+    },
+    "operations": [
+      {
+        "resourceType": "/configStore",
+        "operationType": "DELETE",
+        "subResource": "http-request-parameter-validation",
+        "itemIds": [
+          "client_id"
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "SAVE",
+        "subResource": "org.sourceid.oauth20.domain.ClientManagerXmlFileImpl",
+        "items": [
+          {
+            "id": "MigrationComplete8.4",
+            "type": "STRING",
+            "stringValue": "true"
+          }
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "SAVE",
+        "subResource": "org.sourceid.saml20.domain.mgmt.AdminUserManager",
+        "items": [
+          {
+            "id": "isEaRoleUpdated",
+            "type": "STRING",
+            "stringValue": "true"
+          }
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "SAVE",
+        "subResource": "org.sourceid.saml20.domain.mgmt.impl.PartnerCertMigrator",
+        "items": [
+          {
+            "id": "partner.cert.migration.complete",
+            "type": "STRING",
+            "stringValue": "true"
+          }
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "SAVE",
+        "subResource": "org.sourceid.saml20.domain.mgmt.impl.TrackedHttpParamManagerImpl",
+        "items": [
+          {
+            "id": "AllowedTrackedParams",
+            "type": "LIST",
+            "listValue": []
+          }
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "SAVE",
+        "subResource": "org.sourceid.saml20.metadata.partner.impl.MetadataDirectoryHybridDbImpl",
+        "items": [
+          {
+            "id": "MigrationComplete8.4",
+            "type": "STRING",
+            "stringValue": "true"
+          }
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "SAVE",
+        "subResource": "org.sourceid.saml20.service.impl.PseudonymServiceSha1Impl",
+        "items": [
+          {
+            "id": "entropy",
+            "type": "STRING",
+            "stringValue": "VXBlGWDvv70="
+          }
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "DELETE",
+        "subResource": "org.sourceid.saml20.service.session.StoredSessionServiceImpl",
+        "itemIds": [
+          "EmptySessionReplayRetentionSecs"
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "DELETE",
+        "subResource": "org.sourceid.servlet.filter.SimultaneousAuthnRequestCheckingFilter",
+        "itemIds": [
+          "browser-id-cookie-httponly-flag",
+          "browser-id-cookie-secure-flag"
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "DELETE",
+        "subResource": "p1-admin-service-config",
+        "itemIds": [
+          "AddApplicationUrl"
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "DELETE",
+        "subResource": "persistent-session-cookie-config",
+        "itemIds": [
+          "cookie-format"
+        ]
+      },
+      {
+        "resourceType": "/configStore",
+        "operationType": "SAVE",
+        "subResource": "response-header-admin-config",
+        "items": [
+          {
+            "id": "X-Frame-Options",
+            "type": "MAP",
+            "mapValue": {
+              "include-patterns": "*",
+              "value": "DENY"
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/license/agreement",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "licenseAgreementUrl": "https://localhost:9999/pf-admin-api/license-agreement",
+            "accepted": true
+          }
+        ]
+      },
+      {
+        "resourceType": "/keyPairs/sslServer",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "id": "vtcm75en83g6v1r87ytm7lihi",
+            "fileData": "MIIJ7wIBAzCCCagGCSqGSIb3DQEHAaCCCZkEggmVMIIJkTCCBWUGCSqGSIb3DQEHAaCCBVYEggVSMIIFTjCCBUoGCyqGSIb3DQEMCgECoIIE-zCCBPcwKQYKKoZIhvcNAQwBAzAbBBQjVzDK2BwsmYfn3nLeGwuZP4sTFgIDAMNQBIIEyGat0MuS69-1OUWE0yN9ZVp-YTDP0PNczngmwKbfFDfjKvV0sV4i_4Ef-HFn9gABBjVZkshCUKTrTKu_w5xO2VB410gxyq8-Zq7KCOzFntbq9w35bv-65Nh-a9npTmLQdS6_-r597kCkCqRBPIBfj9FMNKUmATrTcdZimg44Hse8Fj3IhuFu-X1GPSe-vCUwtsW-N7Wslfijzlqa-ag09eii2zf3-LhZj2QUnS0JojLM8xkTER3fGaFVN4U7i3nytWIVPXzvKlC8EOHsT38_WfWxsk4s3KugdOXmx5o9zS6uKjhg8N4AD1YFmWPkUUwAWamAOJYpicPFuysCx7VRhygBl4Vs5ar6EgS32nU6kFTN5YSljwET_7gbO9QnmxbzhKOryrZS1HVsgBP96slwW1XGotkC51YfTyB5_FmGSUqs1SZK4flLd67wPLg162RfBMpqN_-Eyv0UVNv5-GeOjVfuQrkYHZ6W8lqG24pAIRk38VB0VAGjYOND-iuDZQ6-TgOo34cUbiaNBmYczzUmAw0vPjbjpHdpHzwj9YdAIPqP7BcCvV84i7_ZGEZx16J_y8hzMl4dl0_eaxWOmZv71eNYIjZc-Qz23-PZLETTk-XSoRmdTKsSG8r1qWDRnoRqYrUrmaRwA2ZDBuShsFLuBKsIm4NAQ2Tk4dqTHwwx36ZAQ54UpTlVK9EgtnYSRNUn8ISczj955SzPn4cfIWh9YMC3GmKun2hbDDHwGHMCcqNM6bfOwZn0OOPg9F6vaFF24MgbIFDr1TrG9sgoUMYjOv01e-wABkDfMH2UOetHp6XDQ9GPFcoDHfe5B4SB_K3yZb5wJ6wBhtLw_VHwzuBx0FoS_AijDoq6Im2B35mSU0o89WHk309YlNqYwNdZhJl85NgarKlMox40ItAyMTfRTbpgDgtFH6ZD5qnOU3Q_WlR-FTCQJaLRg243CbPTDwz3S7_vA_S0iEZPv5hOVe3MZK1LfQSDArFiKPJfwSF_nyirXm-hXX4R2TfDAhgU2OkaBhAcg8anCmgTlgkmIQ3-YLAgodc-sqNX1V4hcv0kly9laqGg322ru8HDlButU3RZsxgXPsBcJcJ_Y01YtWkcbiQ3ZMMpti9Pvc_EyriEvR0Zn5NzXnY0-CLDLNE1bf0J3YX9xXPbTp5X7OcvV7ugbZxeZo8A31X1jDXMXy6mbwvIlkzaOzyOrGG_0JDeLbJ8g_DPU7bUdiMETSk7LzVvWnKt_MpoBBUdSENKBsSI3tIN4XfB-fmDxf5nROnVd2IemiJ-5RjdZn73uwNAv4jkbfpcPnrG0DEZ_R1X9LZoArdK0z5Qo324BTRcimePgmmved-gbghPLPUc7hrkcsvmCQIutiXRr6KEG8mi9xFol4Pf90FMMp1AjQ4sDLFFkEU_Up5_5clNFw_i5Is8QIObkgPdSsU918PQOyp90FooTRND4qbQNQU4KZ6n-yYhJOS36Q0mH1y4WZXgTIttIurQjsdVd_UV9Pnd6Fc_KVGm9zICGdpq9MC9M1u8TChKmzEMYHQS0T0Lfhg2EuR9ZAnFgwUJRmFuo7z1VgVDdU0v6-I6a0hjIENQsSfli6ozxnAB5a0kiUXqkJO156kw4WMTV-hf06fOYatLizE8MBcGCSqGSIb3DQEJFDEKHggAcABpAG4AZzAhBgkqhkiG9w0BCRUxFAQSVGltZSAxNjA0NjA0NjM5ODM4MIIEJAYJKoZIhvcNAQcGoIIEFTCCBBECAQAwggQKBgkqhkiG9w0BBwEwKQYKKoZIhvcNAQwBBjAbBBTGsHQQS4H2_RTPeEKhZ-26U-IwhgIDAMNQgIID0PcuTZHs51jOtlNx35DiYfAZdtKTUCpW198gfcsJbic5Nu_wX4DG3e9pN1xPvSVm8jVxysGKPPcEdFTVy2wlK6doC6_XnuBhZGnd933uS8WXY5RpfFNKoL_aq9sga01lSK1BLNqA85RAOTVYyBW1sUNkTKE7MGbJNLuuoDoMT_PBPp3ugOh-hAzJIsOfbeBuVG-JrGY-2MmtuRrVxaVj6d49TyNqjkRvbvJo2DsoSbDbO_rsMtvqf8qPZ8Vp-3utZrbXavurcRaCXZpG73t0LecTq2RTW9G8Tc54DVuhmCLZbjYZDD5G66tvMvzegJ39UQvMct6NlkrwNkSp_0cO_wnGGvsgFc3AkQfKqH5vvDUqFevgGSZhynrZj1Ffl-mvyqEKENymnpMiKBmCxVOGN7E5J7nA7BQzoFommgJ3s8K-Ff2tPQgFxwum3RS9VMG9D8RHGTT7HE9HNXMBIgEpZOS0WIe13vytsStpUBF8_IPnUlGEPTQ_VsHypJhvYhhlAIvbJUmGsldxbJaZGpPHJxiLSaE2EaGJl9lYhdChUyKKLf5LIxnp71ki2oNKgH0OSFFRCZ3CLNjgnjULsPhaRR2wFmpkbUqrM5kfoSFRVJYTDeaZx6M7VPN4vbsqluwnZjSnKvuTCoWM2B_QsqkP-7wpfrO3lSpIBSLXoNIJY2dQ5wMGJkaL_ovHCxT_23FST1MQ32SlxpGhsKprpFz6kOOI-WUCOW8ncQT7SJXSPOGBRvu2HDoDk_aVJSfFN1Mv1Ry8p9szKpK7l_5CqqwqZZ5ovL43AhoNPsHI3l4y1nLEaidjguXxSi3irE1puCo_ZghmBLAWzksQp6yt14HiONuwFl0MOs_8njnhCKPtRFULbGjaS39bwO_LaSKClnv-xm8CgNjT73JOte9yrQ4YBzKeV3ppX3wTwMdZohkltxVQzd-INiqawA0dFXa0XV3nMcfi7hJJLpS8w4HoKKuvI5h6gyZkLQLhybEtYkvhFwDpq_guLEGwq7vqLC-jzwloL-s2TbT57VG5xwwy_TVZwu18JJS4RuMo6i3UEhajVCxStpzb8A69D9pwzUcSJrFbiYULnOntYyAsyUP0eadCsCPtIlE0JHRzPzoZxDOiOQUiYjsj_KlDT215juGkrFCto3_OBhiewhimvNi9vb1b7Z_QaSE2HxozIXwzSObJpEgQaWxC2purhMuy_4nzi-WXRIVxzJnEgAbwX_cf72Wu-o7zD6PPetx1xzclugYJknkRBXSwCXn7C_Fi6gaL5tThlYDij5jxAPgSszEJ46qpNoIwPjAhMAkGBSsOAwIaBQAEFGM7L6XuPSLJnxOhtNWqk0UYty2sBBSU6EelyY5DOoBRbKuNyb-WZn5U5gIDAYag",
+            "encryptedPassword": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..kYQnNsH5p-lyfRVVZoyUVQ.039j8Bl9a2MVL3laNHwerWmKuO6b015gPphPcs_pJmA.WrN4Tnqe3-5j0oiO8p7ROw"
+          }
+        ]
+      },
+      {
+        "resourceType": "/keyPairs/sslServer/settings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "runtimeServerCertRef": {
+              "id": "vtcm75en83g6v1r87ytm7lihi",
+              "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/sslServer/vtcm75en83g6v1r87ytm7lihi"
+            },
+            "adminConsoleCertRef": {
+              "id": "vtcm75en83g6v1r87ytm7lihi",
+              "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/sslServer/vtcm75en83g6v1r87ytm7lihi"
+            },
+            "activeRuntimeServerCerts": [
+              {
+                "id": "vtcm75en83g6v1r87ytm7lihi",
+                "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/sslServer/vtcm75en83g6v1r87ytm7lihi"
+              }
+            ],
+            "activeAdminConsoleCerts": [
+              {
+                "id": "vtcm75en83g6v1r87ytm7lihi",
+                "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/sslServer/vtcm75en83g6v1r87ytm7lihi"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "resourceType": "/keyPairs/signing",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "id": "tt645qyta3qb5oa8gobz9uayb",
+            "fileData": "MIIJlwIBAzCCCVAGCSqGSIb3DQEHAaCCCUEEggk9MIIJOTCCBWUGCSqGSIb3DQEHAaCCBVYEggVSMIIFTjCCBUoGCyqGSIb3DQEMCgECoIIE-zCCBPcwKQYKKoZIhvcNAQwBAzAbBBR99Dabr0BO-ATX7ffWFgFfQW5nfwIDAMNQBIIEyJ-8trWNy4ken1rJBhZEuviPle3Gn_PyWwPHWL8Vdz7phLEeY5qTb8-b_yoTnn6zYW73RQEk2dbxD6SUED5evELKpyXHld5Qe-eq2jA-qCNkkci9rToeKQ2-O85iMbI3usVdvXY4T0a8NRyL8y7uJ_DIvC5o9djZ3-jPLC2K59JtMCP_MtpekafTEQyJXmJRAAb1aD7rcyWwLxU4yDm0qZeDbL2NjxNpkUDY72Nl0BN0j7WSIMwS2kLDo1hSTjgYaKksQA7x4DmY_dUscXglnf51-K8TjpGB5c6448xj6o9lBJ0dlTCj-crpoyCasjsNmJUSunJUeFSxOPrYyYElJNeITFyk_JcpVWkQtFn4Dg7Osj5Gnhk-6OWNHdAEFagUMUO2aDDkpQAQl6fZ6fbaepvZLuE8tjOymBSCEIq0nJBjyMGt4C0iEDN0psuilMGhP5z9nyIZQFs6O9QDlJWW_7vC2oL7S7e0Gi5qeHrxE2Xw_t66B0HSLZGRYPobwlFAxkdznX6mF0ALSV2aTIfcyy9eLM7lLOI5BA5_X64YdxpCnRulY_1XPx9KINXj3Uo_cJC56Lk0oa4eynaWXI573m2Z3JxG99QCdKJvsYpfGvYKZ2A2GZsBU-FkvMwka-AZd6nY11m8qTOa9etOI46nz9f5d46IIERLPIfx6GwwGAjZ9HpYo8D2pJJlDx0jnk4w3shzdtleof_qccinAdSifpWGUhCqFpTZtc1-nePnCxZjbQm6FIgJxFX8oWZyaTaRX_9nAcUCmMHEUq_lmKHa2GMe-5D-U1n3HDClj8EzoDGSglxID1XDb8e-O77CnsDhx0-Cec_z4CDrglFG_A_2WFOEG19TANZTaivgIT73dziqFLWXqXRaGBZXdZqUxb7boUCLVYPemx8M3MZBvWul8zIfl3u6hAdg_jxqs-NJk-Oa0l_PStwe6ihM1lwYP88gzAFG7_eEOYDuOo-LIFxIJNGk2c3dQWvJsqJYJZ56_HdqjMXW8yajY6g3az-Xh7ZJnq_cNe9dlLxZnhdnmS59r5kjjwDU9EoZRVQqUlSKjumdfzBgEqHRuzF4php8BtNwuF8KElL2PgDWJFkA_UFs3wCK1CQ2N1iGRcZO_Wk3ilDiZJJy-LZxDsi8hA_y1M1GC46nMRuFXiLuFzBKlh1IYBxc5CKVzDfFHTDZwXey7xo2-6Gw8b_28sc8YLUVrKV3R9pOeEbDys60p3WBsW2Oo9H6zDDP0uJPaaOwQ0HWE2lb_hNPhkSfG2oaaOxxErc79B5JvRWrDyDvs2UPStA4HjLlTOBrUlot_NukQn75TEHAZVZ_rJwIqJCNAGjRO1oJ2M6NOacbWIG5cSbg1Eb4C67PD0UlkCqeB6n0j5AJrnfv_M93oJ7u9JT2kSAxoTaZ9XU-fF6Q8pTFK_1zhLvLodG2jOS1j9NaNH-xrXyridXjifRQBiKhc4NdRkV0ZfyqmTCMIcFrky7rt79QGbEA7kym_W-C7Y8d2fxsVgzad1TEwvQalE-rUG_fWmgJtu8ySb5jcfBGsvZCq0RvrXHlynKWZhkVDrIaY66V0EORnHFrfVOvJTotq0YTReeek4d8SmZ0h4PEDEA66HODbseM2kAxHI_mcn1SoDE8MBcGCSqGSIb3DQEJFDEKHggAcABpAG4AZzAhBgkqhkiG9w0BCRUxFAQSVGltZSAxNjA0NjA0NjQwMDExMIIDzAYJKoZIhvcNAQcGoIIDvTCCA7kCAQAwggOyBgkqhkiG9w0BBwEwKQYKKoZIhvcNAQwBBjAbBBR2eX4QZiQ6P_tJoQRr9nxaim4XJwIDAMNQgIIDeN12bZQ5SbG0cyyDmHaLReFsL23K5XXULzUcOcbivM7drZtrV05HMDUgTq7JhXfN62SObVdX7CHWfQzVGdklAJMNigou4k5qPQqbtYzxUcPNN82QqhDXjUb1rHkpIHcJoedSmqp6PPPpuKNxUhO-jrJrclyyQpbgloGO9BiRKb0tZssbXJuETxLzlbhdTd-J5zXLSGRJllfQX4RRr7hfxmOYwt8x1HE8f91asRbsDEcaUt4jysXVjYzQhbyx4GWy2bger4Mv5XgGnG4PvXcEve4JFneM-zPccqgN4GST9DFwfjxqCi8IGrLz1G18qZuTjk4A6cV74LSIf-sj3aBw1pEP4x4V2wMZzBuNRT-3ulVrLFFD4YZ1l8FijJx5mK4H6umNxPtt5C7nLf9UdoGYrRvoX8Vq9mmVClhn__WCLrWPvD5eSyynSBajfeCA-b_2EEXP3m_fwrB-lpLJdb2IczBVJyFs1q-5r4zPpDJThEUS7JWeQ2OayPUz9dSRrGcmZXi4Vr7KZ-dJONiZU_--Yamh2V_qzzDAqlosTsdJh9f_xlLjbyofTG4nGGSLD5e50VnNw7xqjs9H5-jVkhrlq1LeREEBGCdf6o8K4YZHyKicozBFtTggWvQja2qqXvYBEanQ9Pt_tOrk7qCTKrfCYYPOOPWAhrd-ZhFldw88xcQNeXAmCaTH1UBrwjfKilXedUxUrds0TK8V0hAZjjf0QnsJtcuvd0Qq7O-Upd2w8vaPA9rduTKNhzCkxfwbxSUO_pvf-PbzjY2vczkk_vrc5GMGbDl2GoPmDl3y8vlemPC6s5tPuIXUhcP0KhGiWgPyQdMJr7T3c1C_Bv_O3tSw6IUeHJnyYsNOYKtOcTfoXQsiQYFZN_fEtkOmhA9o1ePgUVeqhUjuS02Yk5YXBMHtJciqXHPRG9P46fFNANZGXw-eEPBXeuvV-W6AEYuiDJXPUV3OKt1m1gd-CZYqEQmTO4C2eSe_5RArJtBSV-JlIOzIIPJG2ze-z_ne7SN99BETziShDejlw65n6LQO51mX8Sajxa6HJGWfhN8DqIG4Vk2XghtYo_qBeLDghcWYr92UQBummSNuAlcAV7S4sSaijugUXwjn9iW40WRoYrwi2ruU7Goo7uGJab5glIvbtWsi_GHFxnd1LJ5ilx34kZBlC0_EkxUNW42dSDA-MCEwCQYFKw4DAhoFAAQUND8Ib83ItvWmO3ZK02G4BhNhaf0EFETQz4GBnXJm9VVha_sYzeA3g9S2AgMBhqA=",
+            "encryptedPassword": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..mynF1J78fALnKuYLvozLcA.6I9-afxqO8CNRGIjxkSse_zA5le72K1TRJ-0cJSWSLc.BdsRoycyOYh84bqsNy8UCw"
+          }
+        ]
+      },
+      {
+        "resourceType": "/keyPairs/oauthOpenIdConnect",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "staticJwksEnabled": false
+          }
+        ]
+      },
+      {
+        "resourceType": "/dataStores",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "type": "CUSTOM",
+            "id": "Other-8961EDCC35861411BDC669DFADCCB131B06D08C5",
+            "name": "PingOneDS",
+            "pluginDescriptorRef": {
+              "id": "com.pingidentity.plugins.datastore.p14c.PingOneForCustomersDataStore",
+              "location": "https://localhost:9999/pf-admin-api/v1/dataStores/descriptors/com.pingidentity.plugins.datastore.p14c.PingOneForCustomersDataStore"
+            },
+            "configuration": {
+              "tables": [
+                {
+                  "name": "Custom Attributes Details",
+                  "rows": []
+                }
+              ],
+              "fields": [
+                {
+                  "name": "Environment ID",
+                  "value": "${P1_ENV_ID}"
+                },
+                {
+                  "name": "Client ID",
+                  "value": "${P1_DS_CLIENT_ID}"
+                },
+                {
+                  "name": "Client Secret",
+                  "encryptedValue": "OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..Upv6fecU_BrSS5c6AMK4fw.G3xm4JWSZeyhVp6H32B4g9vBRGluHyvqaV2aLAyuTyR7v-mS5SZUPekhooH-Xi3MkRTaK9-wV8vHXPRggOYmYqdOieJSbankLxz4RA39GGA.d5xS7bg9A9QxlhuFmyszXA"
+                },
+                {
+                  "name": "PingOne API Service",
+                  "value": "https://api.pingone.com/v1"
+                },
+                {
+                  "name": "PingOne Authorization Service",
+                  "value": "https://auth.pingone.com"
+                },
+                {
+                  "name": "Connection Timeout",
+                  "value": "10000"
+                },
+                {
+                  "name": "Retry Request",
+                  "value": "true"
+                },
+                {
+                  "name": "Maximum Retries Limit",
+                  "value": "5"
+                },
+                {
+                  "name": "Retry Error Codes",
+                  "value": "429"
+                },
+                {
+                  "name": "Proxy Settings",
+                  "value": "System Defaults"
+                },
+                {
+                  "name": "Custom Proxy Host",
+                  "value": ""
+                },
+                {
+                  "name": "Custom Proxy Port",
+                  "value": ""
+                }
+              ]
+            },
+            "maskAttributeValues": false
+          },
+          {
+            "type": "JDBC",
+            "id": "ProvisionerDS",
+            "maskAttributeValues": false,
+            "connectionUrl": "jdbc:hsqldb:${pf.server.data.dir}${/}hypersonic${/}ProvisionerDefaultDB;hsqldb.lock_file=false",
+            "driverClass": "org.hsqldb.jdbcDriver",
+            "userName": "sa",
+            "encryptedPassword": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9.._3eT1h_bRoy6-InRLwdvRQ.eucI_AAzaM60g8PDBEyKbQ.0eCJKX2QgR_Wye0qu2ZNjg",
+            "allowMultiValueAttributes": false,
+            "name": "ProvisionerDS (sa)",
+            "connectionUrlTags": [
+              {
+                "connectionUrl": "jdbc:hsqldb:${pf.server.data.dir}${/}hypersonic${/}ProvisionerDefaultDB;hsqldb.lock_file=false",
+                "defaultSource": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "resourceType": "/notificationPublishers/settings",
+        "operationType": "SAVE",
+        "items": [
+          {}
+        ]
+      },
+      {
+        "resourceType": "/serverSettings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "contactInfo": {},
+            "rolesAndProtocols": {
+              "oauthRole": {
+                "enableOauth": true,
+                "enableOpenIdConnect": true
+              },
+              "idpRole": {
+                "enable": true,
+                "enableSaml11": true,
+                "enableSaml10": true,
+                "enableWsFed": true,
+                "enableWsTrust": true,
+                "saml20Profile": {
+                  "enable": true
+                },
+                "enableOutboundProvisioning": true
+              },
+              "spRole": {
+                "enable": true,
+                "enableSaml11": true,
+                "enableSaml10": true,
+                "enableWsFed": true,
+                "enableWsTrust": true,
+                "saml20Profile": {
+                  "enable": true,
+                  "enableXASP": true
+                },
+                "enableInboundProvisioning": true,
+                "enableOpenIDConnect": true
+              },
+              "enableIdpDiscovery": true
+            },
+            "federationInfo": {
+              "baseUrl": "${PF_BASE_URL}",
+              "saml2EntityId": "${PF_SAML2_ENTITY_ID}",
+              "saml1xIssuerId": "",
+              "saml1xSourceId": "",
+              "wsfedRealm": ""
+            },
+            "notifications": {
+              "notifyAdminUserPasswordChanges": false
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/serverSettings/systemKeys",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "current": {
+              "creationDate": "2019-03-01T21:13:15.312Z",
+              "encryptedKeyData": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiI5LjIuMS4xIiwiemlwIjoiREVGIn0..6SfJ_hi31YjijxEO1TTcnA.ca0XHhzvRL3YmfEJ2MtQthtulK8_2xnxlpsw5PNFUTbFx2dtXPuvmTSH2gDzVtpm.Yj-wHXi6kT00ODQkbLTaGg"
+            },
+            "pending": {
+              "creationDate": "2019-03-01T21:13:15.314Z",
+              "encryptedKeyData": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiI5LjIuMS4xIiwiemlwIjoiREVGIn0..PZcrdh4AZS1dVsp-Y5HMsA.nq4wxFHF59s1NrPT91N2KaEGDVd6hD7YxXSLPtkMk_08K8SUKimCg9yDJv2vuV8T.yjFKHXEH2jZSEz2daDKaig"
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/serverSettings/outboundProvisioning",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "dataStoreRef": {
+              "id": "ProvisionerDS",
+              "location": "https://localhost:9999/pf-admin-api/v1/dataStores/ProvisionerDS"
+            },
+            "synchronizationFrequency": 60
+          }
+        ]
+      },
+      {
+        "resourceType": "/administrativeAccounts",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "username": "Administrator",
+            "encryptedPassword": "OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..5QGNkMae-lNcordiH1FYkQ.O-2kennirHHmy1vPGCuMU-tJwjBFUnSmMa-eWIUAVPdOdiwrceadsjfotMRrOTiwjQAM9cQZHkWtOsCb8eX52A.-BRA7xgO-AhHh9jg45HFDA",
+            "phoneNumber": "",
+            "emailAddress": "",
+            "department": "",
+            "description": "Initial administrator user.",
+            "auditor": false,
+            "active": true,
+            "roles": [
+              "ADMINISTRATOR",
+              "EXPRESSION_ADMINISTRATOR",
+              "CRYPTO_ADMINISTRATOR",
+              "USER_ADMINISTRATOR"
+            ]
+          }
+        ]
+      },
+      {
+        "resourceType": "/certificates/revocation/settings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "crlSettings": {
+              "treatNonRetrievableCrlAsRevoked": false,
+              "verifyCrlSignature": true,
+              "nextRetryMinsWhenResolveFailed": 1440,
+              "nextRetryMinsWhenNextUpdateInPast": 60
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/virtualHostNames",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "virtualHostNames": []
+          }
+        ]
+      },
+      {
+        "resourceType": "/redirectValidation",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "redirectValidationLocalSettings": {
+              "enableTargetResourceValidationForSSO": true,
+              "enableTargetResourceValidationForSLO": true,
+              "enableTargetResourceValidationForIdpDiscovery": true,
+              "enableInErrorResourceValidation": true,
+              "whiteList": []
+            },
+            "redirectValidationPartnerSettings": {
+              "enableWreplyValidationSLO": true
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/incomingProxySettings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "proxyTerminatesHttpsConns": false
+          }
+        ]
+      },
+      {
+        "resourceType": "/protocolMetadata/lifetimeSettings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "cacheDuration": 1440,
+            "reloadDelay": 1440
+          }
+        ]
+      },
+      {
+        "resourceType": "/protocolMetadata/signingSettings",
+        "operationType": "SAVE",
+        "items": [
+          {}
+        ]
+      },
+      {
+        "resourceType": "/serviceAuthentication",
+        "operationType": "SAVE",
+        "items": [
+          {}
+        ]
+      },
+      {
+        "resourceType": "/authenticationPolicyContracts",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "id": "99lAfsShaBqWf9et",
+            "name": "MultiFactor",
+            "coreAttributes": [
+              {
+                "name": "subject"
+              }
+            ],
+            "extendedAttributes": [
+              {
+                "name": "email"
+              }
+            ]
+          },
+          {
+            "id": "MKPTLiN0X6aLThVn",
+            "name": "IovationRisk",
+            "coreAttributes": [
+              {
+                "name": "subject"
+              }
+            ],
+            "extendedAttributes": [
+              {
+                "name": "email"
+              }
+            ]
+          },
+          {
+            "id": "NWKhBiRnEj86jWpP",
+            "name": "BehavioSecIovation",
+            "coreAttributes": [
+              {
+                "name": "subject"
+              }
+            ],
+            "extendedAttributes": [
+              {
+                "name": "email"
+              }
+            ]
+          },
+          {
+            "id": "Oxa3QNmv4T9188Yo",
+            "name": "SingleFactor",
+            "coreAttributes": [
+              {
+                "name": "subject"
+              }
+            ],
+            "extendedAttributes": [
+              {
+                "name": "email"
+              }
+            ]
+          },
+          {
+            "id": "VD6CQ3SoOqWq8LPf",
+            "name": "NetworkCheck",
+            "coreAttributes": [
+              {
+                "name": "subject"
+              }
+            ],
+            "extendedAttributes": [
+              {
+                "name": "email"
+              }
+            ]
+          },
+          {
+            "id": "Z20PsOjmC5UwwkjZ",
+            "name": "BehavioSec",
+            "coreAttributes": [
+              {
+                "name": "subject"
+              }
+            ],
+            "extendedAttributes": [
+              {
+                "name": "email"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "resourceType": "/passwordCredentialValidators",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "id": "PingOnePCV",
+            "name": "PingOnePCV",
+            "pluginDescriptorRef": {
+              "id": "com.pingidentity.plugins.pcvs.p14c.PingOneForCustomersPCV",
+              "location": "https://localhost:9999/pf-admin-api/v1/passwordCredentialValidators/descriptors/com.pingidentity.plugins.pcvs.p14c.PingOneForCustomersPCV"
+            },
+            "configuration": {
+              "tables": [
+                {
+                  "name": "Authentication Error Overrides",
+                  "rows": []
+                }
+              ],
+              "fields": [
+                {
+                  "name": "PingOne For Customers Datastore",
+                  "value": "Other-8961EDCC35861411BDC669DFADCCB131B06D08C5"
+                },
+                {
+                  "name": "Case-Sensitive Matching",
+                  "value": "true"
+                },
+                {
+                  "name": "Display Name Attribute",
+                  "value": ""
+                },
+                {
+                  "name": "PingID Username Attribute",
+                  "value": ""
+                },
+                {
+                  "name": "Username Attribute",
+                  "value": ""
+                },
+                {
+                  "name": "Mail Verified Attribute",
+                  "value": ""
+                },
+                {
+                  "name": "Mail Attribute",
+                  "value": ""
+                },
+                {
+                  "name": "SMS Attribute",
+                  "value": ""
+                }
+              ]
+            },
+            "attributeContract": {
+              "coreAttributes": [
+                {
+                  "name": "devices.email"
+                },
+                {
+                  "name": "preferredLanguage"
+                },
+                {
+                  "name": "address.locality"
+                },
+                {
+                  "name": "timezone"
+                },
+                {
+                  "name": "title"
+                },
+                {
+                  "name": "locale"
+                },
+                {
+                  "name": "enabled"
+                },
+                {
+                  "name": "createdAt"
+                },
+                {
+                  "name": "name.given"
+                },
+                {
+                  "name": "address.region"
+                },
+                {
+                  "name": "nickname"
+                },
+                {
+                  "name": "mfaEnabled"
+                },
+                {
+                  "name": "name.honorificPrefix"
+                },
+                {
+                  "name": "name.honorificSuffix"
+                },
+                {
+                  "name": "id"
+                },
+                {
+                  "name": "address.streetAddress"
+                },
+                {
+                  "name": "email"
+                },
+                {
+                  "name": "updatedAt"
+                },
+                {
+                  "name": "photo.href"
+                },
+                {
+                  "name": "address.postalCode"
+                },
+                {
+                  "name": "address.countryCode"
+                },
+                {
+                  "name": "name.formatted"
+                },
+                {
+                  "name": "name.family"
+                },
+                {
+                  "name": "name.middle"
+                },
+                {
+                  "name": "primaryPhone"
+                },
+                {
+                  "name": "mobilePhone"
+                },
+                {
+                  "name": "username"
+                },
+                {
+                  "name": "devices.phone"
+                }
+              ],
+              "extendedAttributes": []
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/oauth/accessTokenManagers/settings",
+        "operationType": "SAVE",
+        "items": [
+          {}
+        ]
+      },
+      {
+        "resourceType": "/kerberos/realms/settings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "forceTcp": false,
+            "debugLogOutput": false
+          }
+        ]
+      },
+      {
+        "resourceType": "/idp/adapters",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "id": "BehavioSec",
+            "name": "BehavioSec",
+            "pluginDescriptorRef": {
+              "id": "com.behaviosec.adapter.idp.BehavioSecIdpAuthenticationAdapter",
+              "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/descriptors/com.behaviosec.adapter.idp.BehavioSecIdpAuthenticationAdapter"
+            },
+            "configuration": {
+              "tables": [],
+              "fields": [
+                {
+                  "name": "BehavioSense URL",
+                  "value": "https://partner.behaviosec.com/"
+                },
+                {
+                  "name": "Tenant ID",
+                  "value": "e04673cabd37"
+                },
+                {
+                  "name": "Score",
+                  "value": "6"
+                },
+                {
+                  "name": "Confidence",
+                  "value": "5"
+                },
+                {
+                  "name": "Risk",
+                  "value": "75"
+                },
+                {
+                  "name": "Allow training",
+                  "value": "true"
+                },
+                {
+                  "name": "Allow copy paste",
+                  "value": "true"
+                },
+                {
+                  "name": "Allow bots",
+                  "value": "true"
+                },
+                {
+                  "name": "Allow remote access",
+                  "value": "true"
+                },
+                {
+                  "name": "Allow tab anomaly",
+                  "value": "true"
+                },
+                {
+                  "name": "Allow num pad anomaly",
+                  "value": "true"
+                },
+                {
+                  "name": "Allow device change",
+                  "value": "true"
+                },
+                {
+                  "name": "Allow IP change",
+                  "value": "true"
+                }
+              ]
+            },
+            "attributeContract": {
+              "coreAttributes": [
+                {
+                  "name": "policy",
+                  "masked": false,
+                  "pseudonym": true
+                }
+              ],
+              "extendedAttributes": [],
+              "maskOgnlValues": false
+            },
+            "attributeMapping": {
+              "attributeSources": [],
+              "attributeContractFulfillment": {
+                "policy": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "policy"
+                }
+              },
+              "issuanceCriteria": {
+                "conditionalCriteria": []
+              }
+            }
+          },
+          {
+            "id": "BehavioSecForm",
+            "name": "BehavioSecForm",
+            "pluginDescriptorRef": {
+              "id": "com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter",
+              "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/descriptors/com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter"
+            },
+            "configuration": {
+              "tables": [
+                {
+                  "name": "Credential Validators",
+                  "rows": [
+                    {
+                      "fields": [
+                        {
+                          "name": "Password Credential Validator Instance",
+                          "value": "PingOnePCV"
+                        }
+                      ],
+                      "defaultRow": false
+                    }
+                  ]
+                }
+              ],
+              "fields": [
+                {
+                  "name": "Challenge Retries",
+                  "value": "3"
+                },
+                {
+                  "name": "Session State",
+                  "value": "None"
+                },
+                {
+                  "name": "Session Timeout",
+                  "value": "60"
+                },
+                {
+                  "name": "Session Max Timeout",
+                  "value": "480"
+                },
+                {
+                  "name": "Allow Password Changes",
+                  "value": "false"
+                },
+                {
+                  "name": "Password Management System",
+                  "value": ""
+                },
+                {
+                  "name": "Enable 'Remember My Username'",
+                  "value": "false"
+                },
+                {
+                  "name": "Enable 'This is My Device'",
+                  "value": "false"
+                },
+                {
+                  "name": "Change Password Email Notification",
+                  "value": "false"
+                },
+                {
+                  "name": "Show Password Expiring Warning",
+                  "value": "false"
+                },
+                {
+                  "name": "Password Reset Type",
+                  "value": "NONE"
+                },
+                {
+                  "name": "Password Reset Policy Contract",
+                  "value": ""
+                },
+                {
+                  "name": "Account Unlock",
+                  "value": "false"
+                },
+                {
+                  "name": "Local Identity Profile",
+                  "value": ""
+                },
+                {
+                  "name": "Notification Publisher",
+                  "value": ""
+                },
+                {
+                  "name": "Enable Username Recovery",
+                  "value": "false"
+                },
+                {
+                  "name": "Login Template",
+                  "value": "html.form.login.template-behaviosec.html"
+                },
+                {
+                  "name": "Logout Path",
+                  "value": ""
+                },
+                {
+                  "name": "Logout Redirect",
+                  "value": ""
+                },
+                {
+                  "name": "Logout Template",
+                  "value": "idp.logout.success.page.template.html"
+                },
+                {
+                  "name": "Change Password Template",
+                  "value": "html.form.change.password.template.html"
+                },
+                {
+                  "name": "Change Password Message Template",
+                  "value": "html.form.message.template.html"
+                },
+                {
+                  "name": "Password Management System Message Template",
+                  "value": "html.form.message.template.html"
+                },
+                {
+                  "name": "Change Password Email Template",
+                  "value": "message-template-end-user-password-change.html"
+                },
+                {
+                  "name": "Expiring Password Warning Template",
+                  "value": "html.form.password.expiring.notification.template.html"
+                },
+                {
+                  "name": "Threshold for Expiring Password Warning",
+                  "value": "7"
+                },
+                {
+                  "name": "Snooze Interval for Expiring Password Warning",
+                  "value": "24"
+                },
+                {
+                  "name": "Login Challenge Template",
+                  "value": "html.form.login.challenge.template.html"
+                },
+                {
+                  "name": "'Remember My Username' Lifetime",
+                  "value": "30"
+                },
+                {
+                  "name": "'This is My Device' Lifetime",
+                  "value": "30"
+                },
+                {
+                  "name": "Allow Username Edits During Chaining",
+                  "value": "false"
+                },
+                {
+                  "name": "Track Authentication Time",
+                  "value": "true"
+                },
+                {
+                  "name": "Post-Password Change Re-Authentication Delay",
+                  "value": "0"
+                },
+                {
+                  "name": "Password Reset Username Template",
+                  "value": "forgot-password.html"
+                },
+                {
+                  "name": "Password Reset Code Template",
+                  "value": "forgot-password-resume.html"
+                },
+                {
+                  "name": "Password Reset Template",
+                  "value": "forgot-password-change.html"
+                },
+                {
+                  "name": "Password Reset Error Template",
+                  "value": "forgot-password-error.html"
+                },
+                {
+                  "name": "Password Reset Success Template",
+                  "value": "forgot-password-success.html"
+                },
+                {
+                  "name": "Account Unlock Template",
+                  "value": "account-unlock.html"
+                },
+                {
+                  "name": "OTP Length",
+                  "value": "8"
+                },
+                {
+                  "name": "OTP Time to Live",
+                  "value": "10"
+                },
+                {
+                  "name": "PingID Properties",
+                  "value": ""
+                },
+                {
+                  "name": "Require Verified Email",
+                  "value": "false"
+                },
+                {
+                  "name": "Username Recovery Template",
+                  "value": "username.recovery.template.html"
+                },
+                {
+                  "name": "Username Recovery Info Template",
+                  "value": "username.recovery.info.template.html"
+                },
+                {
+                  "name": "Username Recovery Email Template",
+                  "value": "message-template-username-recovery.html"
+                },
+                {
+                  "name": "CAPTCHA for Authentication",
+                  "value": "false"
+                },
+                {
+                  "name": "CAPTCHA for Password change",
+                  "value": "false"
+                },
+                {
+                  "name": "CAPTCHA for Password Reset",
+                  "value": "false"
+                },
+                {
+                  "name": "CAPTCHA for Username recovery",
+                  "value": "false"
+                }
+              ]
+            },
+            "attributeContract": {
+              "coreAttributes": [
+                {
+                  "name": "policy.action",
+                  "masked": false,
+                  "pseudonym": false
+                },
+                {
+                  "name": "username",
+                  "masked": false,
+                  "pseudonym": true
+                }
+              ],
+              "extendedAttributes": [
+                {
+                  "name": "agent",
+                  "masked": false,
+                  "pseudonym": false
+                },
+                {
+                  "name": "email",
+                  "masked": false,
+                  "pseudonym": false
+                },
+                {
+                  "name": "bdata",
+                  "masked": false,
+                  "pseudonym": false
+                }
+              ],
+              "maskOgnlValues": false
+            },
+            "attributeMapping": {
+              "attributeSources": [],
+              "attributeContractFulfillment": {
+                "agent": {
+                  "source": {
+                    "type": "EXPRESSION"
+                  },
+                  "value": "#result = #this.get(\"context.HttpRequest\").getObjectValue().getParameter(\"agent_data\") != null ?  #this.get(\"context.HttpRequest\").getObjectValue().getParameter(\"agent_data\").toString() : null"
+                },
+                "policy.action": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "policy.action"
+                },
+                "email": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "email"
+                },
+                "bdata": {
+                  "source": {
+                    "type": "EXPRESSION"
+                  },
+                  "value": "#result = #this.get(\"context.HttpRequest\").getObjectValue().getParameter(\"bdata\") != null ?  #this.get(\"context.HttpRequest\").getObjectValue().getParameter(\"bdata\").toString() : null"
+                },
+                "username": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "username"
+                }
+              },
+              "issuanceCriteria": {
+                "conditionalCriteria": []
+              }
+            }
+          },
+          {
+            "id": "Iovation",
+            "name": "Iovation",
+            "pluginDescriptorRef": {
+              "id": "com.pingidentity.adapters.iovation.IovationIdpAdapter",
+              "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/descriptors/com.pingidentity.adapters.iovation.IovationIdpAdapter"
+            },
+            "configuration": {
+              "tables": [
+                {
+                  "name": "Optional Transaction Insight Parameters",
+                  "rows": []
+                },
+                {
+                  "name": "Optional iovation Attributes",
+                  "rows": []
+                }
+              ],
+              "fields": [
+                {
+                  "name": "Subscriber ID",
+                  "value": ${IO_SUB_ID}
+                },
+                {
+                  "name": "Subscriber Account",
+                  "value": "${IO_SUB_ACCOUNT}"
+                },
+                {
+                  "name": "Subscriber Passcode",
+                  "encryptedValue": "OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjIuMCJ9..MdAIKWuKDiQO9XVVQCXUzw.GgUbSBfchJsousfD96t-kA.k1Sy3soAH8FMSAubmQHfDw"
+                },
+                {
+                  "name": "iovation Integration Point",
+                  "value": "login"
+                },
+                {
+                  "name": "iovation API Base URL",
+                  "value": "https://ci-api.iovation.com"
+                },
+                {
+                  "name": "Device Profiling Method",
+                  "value": "Captured by this adapter"
+                },
+                {
+                  "name": "Device Profiling Timeout",
+                  "value": "2000"
+                },
+                {
+                  "name": "Blackbox Cookie Name Prefix",
+                  "value": "iovation_bb"
+                },
+                {
+                  "name": "Fraud Check API Endpoint",
+                  "value": "/fraud/v1/subs/${subscriberId}/checks"
+                },
+                {
+                  "name": "Failure Mode",
+                  "value": "Continue with fallback risk result"
+                },
+                {
+                  "name": "Fallback Risk Result Value",
+                  "value": "review"
+                },
+                {
+                  "name": "API Request Timeout",
+                  "value": "2000"
+                },
+                {
+                  "name": "Connection Timeout",
+                  "value": "2000"
+                },
+                {
+                  "name": "Proxy Settings",
+                  "value": "System Defaults"
+                },
+                {
+                  "name": "Custom Proxy Host",
+                  "value": ""
+                },
+                {
+                  "name": "Custom Proxy Port",
+                  "value": ""
+                },
+                {
+                  "name": "Verify HTTPS Hostname",
+                  "value": "true"
+                }
+              ]
+            },
+            "attributeContract": {
+              "coreAttributes": [
+                {
+                  "name": "blackbox",
+                  "masked": false,
+                  "pseudonym": false
+                },
+                {
+                  "name": "transactionRiskResult",
+                  "masked": false,
+                  "pseudonym": true
+                }
+              ],
+              "extendedAttributes": [],
+              "maskOgnlValues": false
+            },
+            "attributeMapping": {
+              "attributeSources": [],
+              "attributeContractFulfillment": {
+                "blackbox": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "blackbox"
+                },
+                "transactionRiskResult": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "transactionRiskResult"
+                }
+              },
+              "issuanceCriteria": {
+                "conditionalCriteria": []
+              }
+            }
+          },
+          {
+            "id": "PingID",
+            "name": "PingID",
+            "pluginDescriptorRef": {
+              "id": "com.pingidentity.adapters.pingid.PingIDAdapter",
+              "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/descriptors/com.pingidentity.adapters.pingid.PingIDAdapter"
+            },
+            "configuration": {
+              "tables": [],
+              "fields": [
+                {
+                  "name": "PingID Properties",
+                  "value": "I0F1dG8tR2VuZXJhdGVkIGZyb20gUGluZ09uZSwgZG93bmxvYWRlZCBieSBpZD1bMTMwMTA2MV0gZW1haWw9W2J5b29uK2FkdmF1dGhuQHBpbmdpZGVudGl0eS5jb21dCiNTdW4gTm92IDAxIDE2OjIzOjQ0IE1TVCAyMDIwCnVzZV9iYXNlNjRfa2V5PVV6TXlJNzl1eElBYmNIU3pKSmVyeGZEZkE3RFB0VW50ckE1L0h3WVljZW89CnVzZV9zaWduYXR1cmU9dHJ1ZQp0b2tlbj05NTk1MGU3ZjM3NGQ0NzBkOGU1ZTg2ODljZWE0MWUxMgppZHBfdXJsPWh0dHBzOi8vaWRweG55bDNtLnBpbmdpZGVudGl0eS5jb20vcGluZ2lkCm9yZ19hbGlhcz1iNTFmYjc0Ni0wMmI2LTQ1YzctOWJkNy05ODg1ZWRmN2ZhY2MKYWRtaW5fdXJsPWh0dHBzOi8vaWRweG55bDNtLnBpbmdpZGVudGl0eS5jb20vcGluZ2lkCmF1dGhlbnRpY2F0b3JfdXJsPWh0dHBzOi8vYXV0aGVudGljYXRvci5waW5nb25lLmNvbS9waW5naWQvcHBtCg=="
+                },
+                {
+                  "name": "LDAP Data source",
+                  "value": ""
+                },
+                {
+                  "name": "Query Directory",
+                  "value": "false"
+                },
+                {
+                  "name": "Base Domain",
+                  "value": ""
+                },
+                {
+                  "name": "Filter",
+                  "value": ""
+                },
+                {
+                  "name": "LDAP Search Scope",
+                  "value": "3"
+                },
+                {
+                  "name": "fname attribute",
+                  "value": ""
+                },
+                {
+                  "name": "lname attribute",
+                  "value": ""
+                },
+                {
+                  "name": "email attribute",
+                  "value": ""
+                },
+                {
+                  "name": "group attribute",
+                  "value": ""
+                },
+                {
+                  "name": "phone attribute",
+                  "value": ""
+                },
+                {
+                  "name": "YubiKey attribute",
+                  "value": ""
+                },
+                {
+                  "name": "Secondary email attribute",
+                  "value": ""
+                },
+                {
+                  "name": "Voice number attribute",
+                  "value": ""
+                },
+                {
+                  "name": "State attribute",
+                  "value": ""
+                },
+                {
+                  "name": "PingID Heartbeat Timeout",
+                  "value": ""
+                },
+                {
+                  "name": "Authentication During Errors",
+                  "value": "REJECT"
+                },
+                {
+                  "name": "Users without a paired device",
+                  "value": "block"
+                },
+                {
+                  "name": "LDAP Data Source For Devices",
+                  "value": ""
+                },
+                {
+                  "name": "Create entry for devices",
+                  "value": "false"
+                },
+                {
+                  "name": "Encryption Key For Devices",
+                  "value": ""
+                },
+                {
+                  "name": "Distinguished Name Pattern",
+                  "value": ""
+                },
+                {
+                  "name": "HTML Template",
+                  "value": "pingid.offline.auth.login.template.html"
+                },
+                {
+                  "name": "Cookie Duration",
+                  "value": "1"
+                },
+                {
+                  "name": "PingID Properties File Name",
+                  "value": "pingid.properties.1"
+                },
+                {
+                  "name": "Refresh UserId Cookie",
+                  "value": "false"
+                },
+                {
+                  "name": "Require PingID Registration",
+                  "value": "false"
+                }
+              ]
+            },
+            "attributeContract": {
+              "coreAttributes": [
+                {
+                  "name": "org.sourceid.saml20.adapter.idp.authn.authnCtx",
+                  "masked": false,
+                  "pseudonym": false
+                },
+                {
+                  "name": "pingid_state",
+                  "masked": false,
+                  "pseudonym": false
+                },
+                {
+                  "name": "pingid.policy.action",
+                  "masked": false,
+                  "pseudonym": false
+                },
+                {
+                  "name": "subject",
+                  "masked": false,
+                  "pseudonym": true
+                }
+              ],
+              "extendedAttributes": [],
+              "maskOgnlValues": false
+            },
+            "attributeMapping": {
+              "attributeSources": [],
+              "attributeContractFulfillment": {
+                "org.sourceid.saml20.adapter.idp.authn.authnCtx": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "org.sourceid.saml20.adapter.idp.authn.authnCtx"
+                },
+                "pingid_state": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "pingid_state"
+                },
+                "pingid.policy.action": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "pingid.policy.action"
+                },
+                "subject": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "subject"
+                }
+              },
+              "issuanceCriteria": {
+                "conditionalCriteria": []
+              }
+            }
+          },
+          {
+            "id": "PingOneForm",
+            "name": "PingOneForm",
+            "pluginDescriptorRef": {
+              "id": "com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter",
+              "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/descriptors/com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter"
+            },
+            "configuration": {
+              "tables": [
+                {
+                  "name": "Credential Validators",
+                  "rows": [
+                    {
+                      "fields": [
+                        {
+                          "name": "Password Credential Validator Instance",
+                          "value": "PingOnePCV"
+                        }
+                      ],
+                      "defaultRow": false
+                    }
+                  ]
+                }
+              ],
+              "fields": [
+                {
+                  "name": "Challenge Retries",
+                  "value": "3"
+                },
+                {
+                  "name": "Session State",
+                  "value": "None"
+                },
+                {
+                  "name": "Session Timeout",
+                  "value": "60"
+                },
+                {
+                  "name": "Session Max Timeout",
+                  "value": "480"
+                },
+                {
+                  "name": "Allow Password Changes",
+                  "value": "false"
+                },
+                {
+                  "name": "Password Management System",
+                  "value": ""
+                },
+                {
+                  "name": "Enable 'Remember My Username'",
+                  "value": "false"
+                },
+                {
+                  "name": "Enable 'This is My Device'",
+                  "value": "false"
+                },
+                {
+                  "name": "Change Password Email Notification",
+                  "value": "false"
+                },
+                {
+                  "name": "Show Password Expiring Warning",
+                  "value": "false"
+                },
+                {
+                  "name": "Password Reset Type",
+                  "value": "NONE"
+                },
+                {
+                  "name": "Password Reset Policy Contract",
+                  "value": ""
+                },
+                {
+                  "name": "Account Unlock",
+                  "value": "false"
+                },
+                {
+                  "name": "Local Identity Profile",
+                  "value": ""
+                },
+                {
+                  "name": "Notification Publisher",
+                  "value": ""
+                },
+                {
+                  "name": "Enable Username Recovery",
+                  "value": "false"
+                },
+                {
+                  "name": "Login Template",
+                  "value": "html.form.login.template.html"
+                },
+                {
+                  "name": "Logout Path",
+                  "value": ""
+                },
+                {
+                  "name": "Logout Redirect",
+                  "value": ""
+                },
+                {
+                  "name": "Logout Template",
+                  "value": "idp.logout.success.page.template.html"
+                },
+                {
+                  "name": "Change Password Template",
+                  "value": "html.form.change.password.template.html"
+                },
+                {
+                  "name": "Change Password Message Template",
+                  "value": "html.form.message.template.html"
+                },
+                {
+                  "name": "Password Management System Message Template",
+                  "value": "html.form.message.template.html"
+                },
+                {
+                  "name": "Change Password Email Template",
+                  "value": "message-template-end-user-password-change.html"
+                },
+                {
+                  "name": "Expiring Password Warning Template",
+                  "value": "html.form.password.expiring.notification.template.html"
+                },
+                {
+                  "name": "Threshold for Expiring Password Warning",
+                  "value": "7"
+                },
+                {
+                  "name": "Snooze Interval for Expiring Password Warning",
+                  "value": "24"
+                },
+                {
+                  "name": "Login Challenge Template",
+                  "value": "html.form.login.challenge.template.html"
+                },
+                {
+                  "name": "'Remember My Username' Lifetime",
+                  "value": "30"
+                },
+                {
+                  "name": "'This is My Device' Lifetime",
+                  "value": "30"
+                },
+                {
+                  "name": "Allow Username Edits During Chaining",
+                  "value": "false"
+                },
+                {
+                  "name": "Track Authentication Time",
+                  "value": "true"
+                },
+                {
+                  "name": "Post-Password Change Re-Authentication Delay",
+                  "value": "0"
+                },
+                {
+                  "name": "Password Reset Username Template",
+                  "value": "forgot-password.html"
+                },
+                {
+                  "name": "Password Reset Code Template",
+                  "value": "forgot-password-resume.html"
+                },
+                {
+                  "name": "Password Reset Template",
+                  "value": "forgot-password-change.html"
+                },
+                {
+                  "name": "Password Reset Error Template",
+                  "value": "forgot-password-error.html"
+                },
+                {
+                  "name": "Password Reset Success Template",
+                  "value": "forgot-password-success.html"
+                },
+                {
+                  "name": "Account Unlock Template",
+                  "value": "account-unlock.html"
+                },
+                {
+                  "name": "OTP Length",
+                  "value": "8"
+                },
+                {
+                  "name": "OTP Time to Live",
+                  "value": "10"
+                },
+                {
+                  "name": "PingID Properties",
+                  "value": ""
+                },
+                {
+                  "name": "Require Verified Email",
+                  "value": "false"
+                },
+                {
+                  "name": "Username Recovery Template",
+                  "value": "username.recovery.template.html"
+                },
+                {
+                  "name": "Username Recovery Info Template",
+                  "value": "username.recovery.info.template.html"
+                },
+                {
+                  "name": "Username Recovery Email Template",
+                  "value": "message-template-username-recovery.html"
+                },
+                {
+                  "name": "CAPTCHA for Authentication",
+                  "value": "false"
+                },
+                {
+                  "name": "CAPTCHA for Password change",
+                  "value": "false"
+                },
+                {
+                  "name": "CAPTCHA for Password Reset",
+                  "value": "false"
+                },
+                {
+                  "name": "CAPTCHA for Username recovery",
+                  "value": "false"
+                }
+              ]
+            },
+            "attributeContract": {
+              "coreAttributes": [
+                {
+                  "name": "policy.action",
+                  "masked": false,
+                  "pseudonym": false
+                },
+                {
+                  "name": "username",
+                  "masked": false,
+                  "pseudonym": true
+                }
+              ],
+              "extendedAttributes": [
+                {
+                  "name": "email",
+                  "masked": false,
+                  "pseudonym": false
+                }
+              ],
+              "maskOgnlValues": false
+            },
+            "attributeMapping": {
+              "attributeSources": [],
+              "attributeContractFulfillment": {
+                "policy.action": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "policy.action"
+                },
+                "email": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "email"
+                },
+                "username": {
+                  "source": {
+                    "type": "ADAPTER"
+                  },
+                  "value": "username"
+                }
+              },
+              "issuanceCriteria": {
+                "conditionalCriteria": []
+              }
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/idp/defaultUrls",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "confirmIdpSlo": false,
+            "idpErrorMsg": "errorDetail.idpSsoFailure"
+          }
+        ]
+      },
+      {
+        "resourceType": "/sp/defaultUrls",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "confirmSlo": false
+          }
+        ]
+      },
+      {
+        "resourceType": "/idp/spConnections",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "type": "SP",
+            "id": "PdJko7VXBc1Mi4UnV2oitwIILR1",
+            "name": "PF BehavioSec Iovation",
+            "entityId": "PF_BehavioSec_Iovation",
+            "active": true,
+            "contactInfo": {},
+            "baseUrl": "https://auth.pingone.com",
+            "loggingMode": "STANDARD",
+            "virtualEntityIds": [],
+            "licenseConnectionGroup": "",
+            "credentials": {
+              "certs": [
+                {
+                  "primaryVerificationCert": true,
+                  "secondaryVerificationCert": false,
+                  "certView": {
+                    "id": "5fliaevtjuhpa72nvb6ug99lq",
+                    "serialNumber": "1603337895892",
+                    "subjectDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "subjectAlternativeNames": [],
+                    "issuerDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "validFrom": "2020-10-22T03:38:15.000Z",
+                    "expires": "2021-10-22T03:38:15.000Z",
+                    "keyAlgorithm": "RSA",
+                    "keySize": 2048,
+                    "signatureAlgorithm": "SHA256withRSA",
+                    "version": 3,
+                    "sha1Fingerprint": "F7F58D6D78D35694BA7CF95BC5A95C818F2000AF",
+                    "sha256Fingerprint": "F06FAB94CE1163FB91CA3973B9402C21CC9CA2FCFC25E49229E61A61EA69EBC0",
+                    "status": "VALID"
+                  },
+                  "x509File": {
+                    "id": "5fliaevtjuhpa72nvb6ug99lq",
+                    "fileData": "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIGAXVOYr/UMA0GCSqGSIb3DQEBCwUAMHkxCzAJBgNVBAYTAlVTMRYwFAYD\nVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50aXR5MTowOAYDVQQDDDFQaW5n\nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgUEYgYW5kIFAxIGVudmlyb25tZW50MB4XDTIwMTAyMjAz\nMzgxNVoXDTIxMTAyMjAzMzgxNVoweTELMAkGA1UEBhMCVVMxFjAUBgNVBAoMDVBpbmcgSWRlbnRp\ndHkxFjAUBgNVBAsMDVBpbmcgSWRlbnRpdHkxOjA4BgNVBAMMMVBpbmdPbmUgU1NPIENlcnRpZmlj\nYXRlIGZvciBQRiBhbmQgUDEgZW52aXJvbm1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQC1OodewyL4pYg1qSlElPcFVW9B2ybfphdoBW1JlxLRvo4m0dnnEnLl1QMr9q0HPHwFSE4E\nhwFjS5VhgfXZKcg9aDH0nuFDupAU/cz2mF5ofy15ZIe7LvY9PfCZkpw6p/BDf5l2Kt94REt3voKn\njbHoGZm5RCsJnWokn9h2r1Migj5XWogK0zS2ycR9wMBmI0ygUshk6BJrqOJhPBdP7qKF8aGUcwcg\nKFpi5K6Va5PWClH6Lrt8CifYUajPLhs52lpF5HsgWnowhLXMQirtzAARQBaAtKNyPDXb/G4zHcSg\nbwgYpU9UsfCLF6CwEMxtYIn+HmE4Xf7Z83ETcjAlZKS3AgMBAAEwDQYJKoZIhvcNAQELBQADggEB\nAJMsxhMTuZAunjxRCv5RjiizRGY10HXJ1C+Gh20kJjbPj5dvKLSg8D69JLBB1Z9xMecAIBr2RrcS\nN+vbxZaOz9Wp/t1BMo7Glh1ZVtYBvy8LhQWloSudwJZYE9x+Ct7WOnPtvPszzbM/YQzDndQK1HJP\nuc6xxCLcJoo6Zk9O3chbeBWdQMq+gGeUxvWoVnLKQSw5U6zBXmFu6YDX6ROmcoPkm3AxPYD9T4ih\nOJnkfgaR2+8zevtsJ0wqR7Z7oYVT0sM57L4GSRwWOFmxBBMEVKGlWToIJH5fzkgpGieHF8Nc26s6\nHUKFviCDctCrUhZZD1aQ2djljQ6ie3wCVFdeiq8=\n-----END CERTIFICATE-----\n"
+                  },
+                  "activeVerificationCert": true,
+                  "encryptionCert": false
+                }
+              ],
+              "signingSettings": {
+                "signingKeyPairRef": {
+                  "id": "tt645qyta3qb5oa8gobz9uayb",
+                  "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/signing/tt645qyta3qb5oa8gobz9uayb"
+                },
+                "includeCertInSignature": false,
+                "includeRawKeyInSignature": false,
+                "algorithm": "SHA256withRSA"
+              }
+            },
+            "spBrowserSso": {
+              "protocol": "SAML20",
+              "enabledProfiles": [
+                "IDP_INITIATED_SSO",
+                "SP_INITIATED_SSO"
+              ],
+              "incomingBindings": [
+                "REDIRECT",
+                "POST"
+              ],
+              "ssoServiceEndpoints": [
+                {
+                  "binding": "POST",
+                  "url": "/${P1_ENV_ID}/saml20/sp/acs",
+                  "isDefault": true,
+                  "index": 0
+                }
+              ],
+              "signAssertions": false,
+              "signResponseAsRequired": true,
+              "spSamlIdentityMapping": "STANDARD",
+              "requireSignedAuthnRequests": false,
+              "assertionLifetime": {
+                "minutesBefore": 5,
+                "minutesAfter": 5
+              },
+              "encryptionPolicy": {
+                "encryptAssertion": false,
+                "encryptSloSubjectNameId": false,
+                "sloSubjectNameIDEncrypted": false,
+                "encryptedAttributes": []
+              },
+              "attributeContract": {
+                "coreAttributes": [
+                  {
+                    "name": "SAML_SUBJECT",
+                    "nameFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+                  }
+                ],
+                "extendedAttributes": []
+              },
+              "adapterMappings": [],
+              "authenticationPolicyContractAssertionMappings": [
+                {
+                  "attributeSources": [],
+                  "attributeContractFulfillment": {
+                    "SAML_SUBJECT": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "subject"
+                    }
+                  },
+                  "issuanceCriteria": {
+                    "conditionalCriteria": []
+                  },
+                  "authenticationPolicyContractRef": {
+                    "id": "NWKhBiRnEj86jWpP",
+                    "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/NWKhBiRnEj86jWpP"
+                  },
+                  "restrictVirtualEntityIds": false,
+                  "restrictedVirtualEntityIds": [],
+                  "abortSsoTransactionAsFailSafe": false
+                }
+              ]
+            }
+          },
+          {
+            "type": "SP",
+            "id": "QNApFBrP9_zoyVtXii5uYA1aCNY",
+            "name": "PF Multi Factor",
+            "entityId": "PF_Multi_Factor",
+            "active": true,
+            "contactInfo": {},
+            "baseUrl": "https://auth.pingone.com",
+            "loggingMode": "STANDARD",
+            "virtualEntityIds": [],
+            "licenseConnectionGroup": "",
+            "credentials": {
+              "certs": [],
+              "signingSettings": {
+                "signingKeyPairRef": {
+                  "id": "tt645qyta3qb5oa8gobz9uayb",
+                  "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/signing/tt645qyta3qb5oa8gobz9uayb"
+                },
+                "includeCertInSignature": false,
+                "includeRawKeyInSignature": false,
+                "algorithm": "SHA256withRSA"
+              }
+            },
+            "spBrowserSso": {
+              "protocol": "SAML20",
+              "enabledProfiles": [
+                "IDP_INITIATED_SSO",
+                "SP_INITIATED_SSO"
+              ],
+              "incomingBindings": [
+                "REDIRECT",
+                "POST"
+              ],
+              "ssoServiceEndpoints": [
+                {
+                  "binding": "POST",
+                  "url": "/${P1_ENV_ID}/saml20/sp/acs",
+                  "isDefault": true,
+                  "index": 0
+                }
+              ],
+              "signAssertions": false,
+              "signResponseAsRequired": true,
+              "spSamlIdentityMapping": "STANDARD",
+              "requireSignedAuthnRequests": false,
+              "assertionLifetime": {
+                "minutesBefore": 5,
+                "minutesAfter": 5
+              },
+              "encryptionPolicy": {
+                "encryptAssertion": false,
+                "encryptSloSubjectNameId": false,
+                "sloSubjectNameIDEncrypted": false,
+                "encryptedAttributes": []
+              },
+              "attributeContract": {
+                "coreAttributes": [
+                  {
+                    "name": "SAML_SUBJECT",
+                    "nameFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+                  }
+                ],
+                "extendedAttributes": [
+                  {
+                    "name": "email",
+                    "nameFormat": "urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+                  }
+                ]
+              },
+              "adapterMappings": [],
+              "authenticationPolicyContractAssertionMappings": [
+                {
+                  "attributeSources": [],
+                  "attributeContractFulfillment": {
+                    "SAML_SUBJECT": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "subject"
+                    },
+                    "email": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "email"
+                    }
+                  },
+                  "issuanceCriteria": {
+                    "conditionalCriteria": []
+                  },
+                  "authenticationPolicyContractRef": {
+                    "id": "99lAfsShaBqWf9et",
+                    "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/99lAfsShaBqWf9et"
+                  },
+                  "restrictVirtualEntityIds": false,
+                  "restrictedVirtualEntityIds": [],
+                  "abortSsoTransactionAsFailSafe": false
+                }
+              ]
+            }
+          },
+          {
+            "type": "SP",
+            "id": "YvkZUIe5E8ElhDEVwL.ns4-0Hgv",
+            "name": "PF Single Factor",
+            "entityId": "PF_Single_Factor",
+            "active": true,
+            "contactInfo": {},
+            "baseUrl": "https://auth.pingone.com",
+            "loggingMode": "STANDARD",
+            "virtualEntityIds": [],
+            "licenseConnectionGroup": "",
+            "credentials": {
+              "certs": [
+                {
+                  "primaryVerificationCert": true,
+                  "secondaryVerificationCert": false,
+                  "certView": {
+                    "id": "2azlisp3rs3l15xk5bhdzalo5",
+                    "serialNumber": "1603337895892",
+                    "subjectDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "subjectAlternativeNames": [],
+                    "issuerDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "validFrom": "2020-10-22T03:38:15.000Z",
+                    "expires": "2021-10-22T03:38:15.000Z",
+                    "keyAlgorithm": "RSA",
+                    "keySize": 2048,
+                    "signatureAlgorithm": "SHA256withRSA",
+                    "version": 3,
+                    "sha1Fingerprint": "F7F58D6D78D35694BA7CF95BC5A95C818F2000AF",
+                    "sha256Fingerprint": "F06FAB94CE1163FB91CA3973B9402C21CC9CA2FCFC25E49229E61A61EA69EBC0",
+                    "status": "VALID"
+                  },
+                  "x509File": {
+                    "id": "2azlisp3rs3l15xk5bhdzalo5",
+                    "fileData": "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIGAXVOYr/UMA0GCSqGSIb3DQEBCwUAMHkxCzAJBgNVBAYTAlVTMRYwFAYD\nVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50aXR5MTowOAYDVQQDDDFQaW5n\nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgUEYgYW5kIFAxIGVudmlyb25tZW50MB4XDTIwMTAyMjAz\nMzgxNVoXDTIxMTAyMjAzMzgxNVoweTELMAkGA1UEBhMCVVMxFjAUBgNVBAoMDVBpbmcgSWRlbnRp\ndHkxFjAUBgNVBAsMDVBpbmcgSWRlbnRpdHkxOjA4BgNVBAMMMVBpbmdPbmUgU1NPIENlcnRpZmlj\nYXRlIGZvciBQRiBhbmQgUDEgZW52aXJvbm1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQC1OodewyL4pYg1qSlElPcFVW9B2ybfphdoBW1JlxLRvo4m0dnnEnLl1QMr9q0HPHwFSE4E\nhwFjS5VhgfXZKcg9aDH0nuFDupAU/cz2mF5ofy15ZIe7LvY9PfCZkpw6p/BDf5l2Kt94REt3voKn\njbHoGZm5RCsJnWokn9h2r1Migj5XWogK0zS2ycR9wMBmI0ygUshk6BJrqOJhPBdP7qKF8aGUcwcg\nKFpi5K6Va5PWClH6Lrt8CifYUajPLhs52lpF5HsgWnowhLXMQirtzAARQBaAtKNyPDXb/G4zHcSg\nbwgYpU9UsfCLF6CwEMxtYIn+HmE4Xf7Z83ETcjAlZKS3AgMBAAEwDQYJKoZIhvcNAQELBQADggEB\nAJMsxhMTuZAunjxRCv5RjiizRGY10HXJ1C+Gh20kJjbPj5dvKLSg8D69JLBB1Z9xMecAIBr2RrcS\nN+vbxZaOz9Wp/t1BMo7Glh1ZVtYBvy8LhQWloSudwJZYE9x+Ct7WOnPtvPszzbM/YQzDndQK1HJP\nuc6xxCLcJoo6Zk9O3chbeBWdQMq+gGeUxvWoVnLKQSw5U6zBXmFu6YDX6ROmcoPkm3AxPYD9T4ih\nOJnkfgaR2+8zevtsJ0wqR7Z7oYVT0sM57L4GSRwWOFmxBBMEVKGlWToIJH5fzkgpGieHF8Nc26s6\nHUKFviCDctCrUhZZD1aQ2djljQ6ie3wCVFdeiq8=\n-----END CERTIFICATE-----\n"
+                  },
+                  "activeVerificationCert": true,
+                  "encryptionCert": false
+                },
+                {
+                  "primaryVerificationCert": false,
+                  "secondaryVerificationCert": false,
+                  "certView": {
+                    "id": "tcm5f89fkbekn2f4nubgd8ad7",
+                    "serialNumber": "1603337896148",
+                    "subjectDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "subjectAlternativeNames": [],
+                    "issuerDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "validFrom": "2020-10-22T03:38:16.000Z",
+                    "expires": "2021-10-22T03:38:16.000Z",
+                    "keyAlgorithm": "RSA",
+                    "keySize": 2048,
+                    "signatureAlgorithm": "SHA256withRSA",
+                    "version": 3,
+                    "sha1Fingerprint": "4C16D16223B2A8E7316174C82192234F6F0A9C5F",
+                    "sha256Fingerprint": "6E35632F9B4994018C3C4DB74602CC79D984537902B9B849A1BD8F8585E19FDC",
+                    "status": "VALID"
+                  },
+                  "x509File": {
+                    "id": "tcm5f89fkbekn2f4nubgd8ad7",
+                    "fileData": "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIGAXVOYsDUMA0GCSqGSIb3DQEBCwUAMHkxCzAJBgNVBAYTAlVTMRYwFAYD\nVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50aXR5MTowOAYDVQQDDDFQaW5n\nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgUEYgYW5kIFAxIGVudmlyb25tZW50MB4XDTIwMTAyMjAz\nMzgxNloXDTIxMTAyMjAzMzgxNloweTELMAkGA1UEBhMCVVMxFjAUBgNVBAoMDVBpbmcgSWRlbnRp\ndHkxFjAUBgNVBAsMDVBpbmcgSWRlbnRpdHkxOjA4BgNVBAMMMVBpbmdPbmUgU1NPIENlcnRpZmlj\nYXRlIGZvciBQRiBhbmQgUDEgZW52aXJvbm1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQCWec4vNFtWobeHD6Pb6b139ePRUbyIXc/iEGIIp1KXPjqnaW+5Nqg7Ru4FwIbklDtnr6Hm\nrivKaJWNIHJyJNdEsyPdcXFSyrV/Olc2Ns94jocXfP/MEkUq9XuBXNEB3WbqgadThR1tVFQgoPwp\nFJaDBlw8shDIperBaQdpmCVEzwAc+xxQmSmL3BjyKLjS0kMJHMdtMQAaTcoey8KY7vEVWmz4l2QS\nWX9KuoMVf3N1Lv8eKVjgzeUlGQBgVWcFdgh9xHeaRUIcJjrsZ7Cp3gkBjBkIg8D0bqbjwzM+298X\nzjzXSTOi8xvXhFyfahFA1867Ng6Q/cnLn9V7nkBm1Ne1AgMBAAEwDQYJKoZIhvcNAQELBQADggEB\nACjkSS+ORFnST+wLQ5GZibgJany7L8KgHEYFnNSvoen1Fewz0sxv9tWv9MMwis04YAFWVd0jYPTW\nV96SsMrR6dO5im55MiUnB4We8wh/DCmWMaCdeMMpUOA8GpsxN1Dj9tSu3GAcLRg5J/b1WPP56F2s\nQwFEbOq4TGwYqxL5S3DGvzPTXUswWPBEOtzhaU4W1uPph4ywvQqUNkIuMOsrFmctwLrPKU0OkhWr\nUKpo3sQp7sQCcpujZi+ha8PtAVFoe7iW8uAnL70Jyl7olaH0aL227s5El8eLHxJZMrvxQMVkhToV\nUvPdu+SS8n74dSxwsCPLkC+n7QwNRpbL79qw69c=\n-----END CERTIFICATE-----\n"
+                  },
+                  "activeVerificationCert": false,
+                  "encryptionCert": false
+                }
+              ],
+              "signingSettings": {
+                "signingKeyPairRef": {
+                  "id": "tt645qyta3qb5oa8gobz9uayb",
+                  "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/signing/tt645qyta3qb5oa8gobz9uayb"
+                },
+                "includeCertInSignature": false,
+                "includeRawKeyInSignature": false,
+                "algorithm": "SHA256withRSA"
+              }
+            },
+            "spBrowserSso": {
+              "protocol": "SAML20",
+              "enabledProfiles": [
+                "IDP_INITIATED_SSO",
+                "SP_INITIATED_SSO"
+              ],
+              "incomingBindings": [
+                "REDIRECT",
+                "POST"
+              ],
+              "ssoServiceEndpoints": [
+                {
+                  "binding": "POST",
+                  "url": "/${P1_ENV_ID}/saml20/sp/acs",
+                  "isDefault": true,
+                  "index": 0
+                }
+              ],
+              "signAssertions": true,
+              "signResponseAsRequired": false,
+              "spSamlIdentityMapping": "STANDARD",
+              "requireSignedAuthnRequests": true,
+              "assertionLifetime": {
+                "minutesBefore": 5,
+                "minutesAfter": 5
+              },
+              "encryptionPolicy": {
+                "encryptAssertion": false,
+                "encryptSloSubjectNameId": false,
+                "sloSubjectNameIDEncrypted": false,
+                "encryptedAttributes": []
+              },
+              "attributeContract": {
+                "coreAttributes": [
+                  {
+                    "name": "SAML_SUBJECT",
+                    "nameFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+                  }
+                ],
+                "extendedAttributes": [
+                  {
+                    "name": "email",
+                    "nameFormat": "urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+                  }
+                ]
+              },
+              "adapterMappings": [],
+              "authenticationPolicyContractAssertionMappings": [
+                {
+                  "attributeSources": [],
+                  "attributeContractFulfillment": {
+                    "SAML_SUBJECT": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "subject"
+                    },
+                    "email": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "email"
+                    }
+                  },
+                  "issuanceCriteria": {
+                    "conditionalCriteria": []
+                  },
+                  "authenticationPolicyContractRef": {
+                    "id": "Oxa3QNmv4T9188Yo",
+                    "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/Oxa3QNmv4T9188Yo"
+                  },
+                  "restrictVirtualEntityIds": false,
+                  "restrictedVirtualEntityIds": [],
+                  "abortSsoTransactionAsFailSafe": false
+                }
+              ]
+            }
+          },
+          {
+            "type": "SP",
+            "id": "bMPJusX7xqGAIVsCtvjfUOzZoHt",
+            "name": "PF BehavioSec",
+            "entityId": "PF_BehavioSec",
+            "active": true,
+            "contactInfo": {},
+            "baseUrl": "https://auth.pingone.com",
+            "loggingMode": "STANDARD",
+            "virtualEntityIds": [],
+            "licenseConnectionGroup": "",
+            "credentials": {
+              "certs": [
+                {
+                  "primaryVerificationCert": true,
+                  "secondaryVerificationCert": false,
+                  "certView": {
+                    "id": "rfwkg23enx9xjy2ti88pzlyxg",
+                    "serialNumber": "1603337895892",
+                    "subjectDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "subjectAlternativeNames": [],
+                    "issuerDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "validFrom": "2020-10-22T03:38:15.000Z",
+                    "expires": "2021-10-22T03:38:15.000Z",
+                    "keyAlgorithm": "RSA",
+                    "keySize": 2048,
+                    "signatureAlgorithm": "SHA256withRSA",
+                    "version": 3,
+                    "sha1Fingerprint": "F7F58D6D78D35694BA7CF95BC5A95C818F2000AF",
+                    "sha256Fingerprint": "F06FAB94CE1163FB91CA3973B9402C21CC9CA2FCFC25E49229E61A61EA69EBC0",
+                    "status": "VALID"
+                  },
+                  "x509File": {
+                    "id": "rfwkg23enx9xjy2ti88pzlyxg",
+                    "fileData": "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIGAXVOYr/UMA0GCSqGSIb3DQEBCwUAMHkxCzAJBgNVBAYTAlVTMRYwFAYD\nVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50aXR5MTowOAYDVQQDDDFQaW5n\nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgUEYgYW5kIFAxIGVudmlyb25tZW50MB4XDTIwMTAyMjAz\nMzgxNVoXDTIxMTAyMjAzMzgxNVoweTELMAkGA1UEBhMCVVMxFjAUBgNVBAoMDVBpbmcgSWRlbnRp\ndHkxFjAUBgNVBAsMDVBpbmcgSWRlbnRpdHkxOjA4BgNVBAMMMVBpbmdPbmUgU1NPIENlcnRpZmlj\nYXRlIGZvciBQRiBhbmQgUDEgZW52aXJvbm1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQC1OodewyL4pYg1qSlElPcFVW9B2ybfphdoBW1JlxLRvo4m0dnnEnLl1QMr9q0HPHwFSE4E\nhwFjS5VhgfXZKcg9aDH0nuFDupAU/cz2mF5ofy15ZIe7LvY9PfCZkpw6p/BDf5l2Kt94REt3voKn\njbHoGZm5RCsJnWokn9h2r1Migj5XWogK0zS2ycR9wMBmI0ygUshk6BJrqOJhPBdP7qKF8aGUcwcg\nKFpi5K6Va5PWClH6Lrt8CifYUajPLhs52lpF5HsgWnowhLXMQirtzAARQBaAtKNyPDXb/G4zHcSg\nbwgYpU9UsfCLF6CwEMxtYIn+HmE4Xf7Z83ETcjAlZKS3AgMBAAEwDQYJKoZIhvcNAQELBQADggEB\nAJMsxhMTuZAunjxRCv5RjiizRGY10HXJ1C+Gh20kJjbPj5dvKLSg8D69JLBB1Z9xMecAIBr2RrcS\nN+vbxZaOz9Wp/t1BMo7Glh1ZVtYBvy8LhQWloSudwJZYE9x+Ct7WOnPtvPszzbM/YQzDndQK1HJP\nuc6xxCLcJoo6Zk9O3chbeBWdQMq+gGeUxvWoVnLKQSw5U6zBXmFu6YDX6ROmcoPkm3AxPYD9T4ih\nOJnkfgaR2+8zevtsJ0wqR7Z7oYVT0sM57L4GSRwWOFmxBBMEVKGlWToIJH5fzkgpGieHF8Nc26s6\nHUKFviCDctCrUhZZD1aQ2djljQ6ie3wCVFdeiq8=\n-----END CERTIFICATE-----\n"
+                  },
+                  "activeVerificationCert": true,
+                  "encryptionCert": false
+                }
+              ],
+              "signingSettings": {
+                "signingKeyPairRef": {
+                  "id": "tt645qyta3qb5oa8gobz9uayb",
+                  "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/signing/tt645qyta3qb5oa8gobz9uayb"
+                },
+                "includeCertInSignature": false,
+                "includeRawKeyInSignature": false,
+                "algorithm": "SHA256withRSA"
+              }
+            },
+            "spBrowserSso": {
+              "protocol": "SAML20",
+              "enabledProfiles": [
+                "IDP_INITIATED_SSO",
+                "SP_INITIATED_SSO"
+              ],
+              "incomingBindings": [
+                "REDIRECT",
+                "POST"
+              ],
+              "ssoServiceEndpoints": [
+                {
+                  "binding": "POST",
+                  "url": "/${P1_ENV_ID}/saml20/sp/acs",
+                  "isDefault": true,
+                  "index": 0
+                }
+              ],
+              "signAssertions": false,
+              "signResponseAsRequired": true,
+              "spSamlIdentityMapping": "STANDARD",
+              "requireSignedAuthnRequests": false,
+              "assertionLifetime": {
+                "minutesBefore": 5,
+                "minutesAfter": 5
+              },
+              "encryptionPolicy": {
+                "encryptAssertion": false,
+                "encryptSloSubjectNameId": false,
+                "sloSubjectNameIDEncrypted": false,
+                "encryptedAttributes": []
+              },
+              "attributeContract": {
+                "coreAttributes": [
+                  {
+                    "name": "SAML_SUBJECT",
+                    "nameFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+                  }
+                ],
+                "extendedAttributes": []
+              },
+              "adapterMappings": [],
+              "authenticationPolicyContractAssertionMappings": [
+                {
+                  "attributeSources": [],
+                  "attributeContractFulfillment": {
+                    "SAML_SUBJECT": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "subject"
+                    }
+                  },
+                  "issuanceCriteria": {
+                    "conditionalCriteria": []
+                  },
+                  "authenticationPolicyContractRef": {
+                    "id": "Z20PsOjmC5UwwkjZ",
+                    "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/Z20PsOjmC5UwwkjZ"
+                  },
+                  "restrictVirtualEntityIds": false,
+                  "restrictedVirtualEntityIds": [],
+                  "abortSsoTransactionAsFailSafe": false
+                }
+              ]
+            }
+          },
+          {
+            "type": "SP",
+            "id": "fsiP1Dopp45.n8c-EIiqX1XtYRN",
+            "name": "PF Network Check",
+            "entityId": "PF_Network_Check",
+            "active": true,
+            "contactInfo": {},
+            "baseUrl": "https://auth.pingone.com",
+            "loggingMode": "STANDARD",
+            "virtualEntityIds": [],
+            "licenseConnectionGroup": "",
+            "credentials": {
+              "certs": [
+                {
+                  "primaryVerificationCert": true,
+                  "secondaryVerificationCert": false,
+                  "certView": {
+                    "id": "djvbcekqlrqaeftfm7jf0q9xo",
+                    "serialNumber": "1603337895892",
+                    "subjectDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "subjectAlternativeNames": [],
+                    "issuerDN": "CN=PingOne SSO Certificate for PF and P1 environment, OU=Ping Identity, O=Ping Identity, C=US",
+                    "validFrom": "2020-10-22T03:38:15.000Z",
+                    "expires": "2021-10-22T03:38:15.000Z",
+                    "keyAlgorithm": "RSA",
+                    "keySize": 2048,
+                    "signatureAlgorithm": "SHA256withRSA",
+                    "version": 3,
+                    "sha1Fingerprint": "F7F58D6D78D35694BA7CF95BC5A95C818F2000AF",
+                    "sha256Fingerprint": "F06FAB94CE1163FB91CA3973B9402C21CC9CA2FCFC25E49229E61A61EA69EBC0",
+                    "status": "VALID"
+                  },
+                  "x509File": {
+                    "id": "djvbcekqlrqaeftfm7jf0q9xo",
+                    "fileData": "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIGAXVOYr/UMA0GCSqGSIb3DQEBCwUAMHkxCzAJBgNVBAYTAlVTMRYwFAYD\nVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50aXR5MTowOAYDVQQDDDFQaW5n\nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgUEYgYW5kIFAxIGVudmlyb25tZW50MB4XDTIwMTAyMjAz\nMzgxNVoXDTIxMTAyMjAzMzgxNVoweTELMAkGA1UEBhMCVVMxFjAUBgNVBAoMDVBpbmcgSWRlbnRp\ndHkxFjAUBgNVBAsMDVBpbmcgSWRlbnRpdHkxOjA4BgNVBAMMMVBpbmdPbmUgU1NPIENlcnRpZmlj\nYXRlIGZvciBQRiBhbmQgUDEgZW52aXJvbm1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQC1OodewyL4pYg1qSlElPcFVW9B2ybfphdoBW1JlxLRvo4m0dnnEnLl1QMr9q0HPHwFSE4E\nhwFjS5VhgfXZKcg9aDH0nuFDupAU/cz2mF5ofy15ZIe7LvY9PfCZkpw6p/BDf5l2Kt94REt3voKn\njbHoGZm5RCsJnWokn9h2r1Migj5XWogK0zS2ycR9wMBmI0ygUshk6BJrqOJhPBdP7qKF8aGUcwcg\nKFpi5K6Va5PWClH6Lrt8CifYUajPLhs52lpF5HsgWnowhLXMQirtzAARQBaAtKNyPDXb/G4zHcSg\nbwgYpU9UsfCLF6CwEMxtYIn+HmE4Xf7Z83ETcjAlZKS3AgMBAAEwDQYJKoZIhvcNAQELBQADggEB\nAJMsxhMTuZAunjxRCv5RjiizRGY10HXJ1C+Gh20kJjbPj5dvKLSg8D69JLBB1Z9xMecAIBr2RrcS\nN+vbxZaOz9Wp/t1BMo7Glh1ZVtYBvy8LhQWloSudwJZYE9x+Ct7WOnPtvPszzbM/YQzDndQK1HJP\nuc6xxCLcJoo6Zk9O3chbeBWdQMq+gGeUxvWoVnLKQSw5U6zBXmFu6YDX6ROmcoPkm3AxPYD9T4ih\nOJnkfgaR2+8zevtsJ0wqR7Z7oYVT0sM57L4GSRwWOFmxBBMEVKGlWToIJH5fzkgpGieHF8Nc26s6\nHUKFviCDctCrUhZZD1aQ2djljQ6ie3wCVFdeiq8=\n-----END CERTIFICATE-----\n"
+                  },
+                  "activeVerificationCert": true,
+                  "encryptionCert": false
+                }
+              ],
+              "signingSettings": {
+                "signingKeyPairRef": {
+                  "id": "tt645qyta3qb5oa8gobz9uayb",
+                  "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/signing/tt645qyta3qb5oa8gobz9uayb"
+                },
+                "includeCertInSignature": false,
+                "includeRawKeyInSignature": false,
+                "algorithm": "SHA256withRSA"
+              }
+            },
+            "spBrowserSso": {
+              "protocol": "SAML20",
+              "enabledProfiles": [
+                "IDP_INITIATED_SSO",
+                "SP_INITIATED_SSO"
+              ],
+              "incomingBindings": [
+                "REDIRECT",
+                "POST"
+              ],
+              "ssoServiceEndpoints": [
+                {
+                  "binding": "POST",
+                  "url": "/${P1_ENV_ID}/saml20/sp/acs",
+                  "isDefault": true,
+                  "index": 0
+                }
+              ],
+              "signAssertions": false,
+              "signResponseAsRequired": true,
+              "spSamlIdentityMapping": "STANDARD",
+              "requireSignedAuthnRequests": false,
+              "assertionLifetime": {
+                "minutesBefore": 5,
+                "minutesAfter": 5
+              },
+              "encryptionPolicy": {
+                "encryptAssertion": false,
+                "encryptSloSubjectNameId": false,
+                "sloSubjectNameIDEncrypted": false,
+                "encryptedAttributes": []
+              },
+              "attributeContract": {
+                "coreAttributes": [
+                  {
+                    "name": "SAML_SUBJECT",
+                    "nameFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+                  }
+                ],
+                "extendedAttributes": []
+              },
+              "adapterMappings": [],
+              "authenticationPolicyContractAssertionMappings": [
+                {
+                  "attributeSources": [],
+                  "attributeContractFulfillment": {
+                    "SAML_SUBJECT": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "subject"
+                    }
+                  },
+                  "issuanceCriteria": {
+                    "conditionalCriteria": []
+                  },
+                  "authenticationPolicyContractRef": {
+                    "id": "VD6CQ3SoOqWq8LPf",
+                    "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/VD6CQ3SoOqWq8LPf"
+                  },
+                  "restrictVirtualEntityIds": false,
+                  "restrictedVirtualEntityIds": [],
+                  "abortSsoTransactionAsFailSafe": false
+                }
+              ]
+            }
+          },
+          {
+            "type": "SP",
+            "id": "wPyqiwX3N4K9jAHLw5NAgtaecfo",
+            "name": "PF Iovation",
+            "entityId": "PF_Iovation",
+            "active": true,
+            "contactInfo": {},
+            "baseUrl": "https://auth.pingone.com",
+            "loggingMode": "STANDARD",
+            "virtualEntityIds": [],
+            "licenseConnectionGroup": "",
+            "credentials": {
+              "certs": [],
+              "signingSettings": {
+                "signingKeyPairRef": {
+                  "id": "tt645qyta3qb5oa8gobz9uayb",
+                  "location": "https://localhost:9999/pf-admin-api/v1/keyPairs/signing/tt645qyta3qb5oa8gobz9uayb"
+                },
+                "includeCertInSignature": false,
+                "includeRawKeyInSignature": false,
+                "algorithm": "SHA256withRSA"
+              }
+            },
+            "spBrowserSso": {
+              "protocol": "SAML20",
+              "enabledProfiles": [
+                "IDP_INITIATED_SSO",
+                "SP_INITIATED_SSO"
+              ],
+              "incomingBindings": [
+                "REDIRECT",
+                "POST"
+              ],
+              "ssoServiceEndpoints": [
+                {
+                  "binding": "POST",
+                  "url": "/${P1_ENV_ID}/saml20/sp/acs",
+                  "isDefault": true,
+                  "index": 0
+                }
+              ],
+              "signAssertions": false,
+              "signResponseAsRequired": true,
+              "spSamlIdentityMapping": "STANDARD",
+              "requireSignedAuthnRequests": false,
+              "assertionLifetime": {
+                "minutesBefore": 5,
+                "minutesAfter": 5
+              },
+              "encryptionPolicy": {
+                "encryptAssertion": false,
+                "encryptSloSubjectNameId": false,
+                "sloSubjectNameIDEncrypted": false,
+                "encryptedAttributes": []
+              },
+              "attributeContract": {
+                "coreAttributes": [
+                  {
+                    "name": "SAML_SUBJECT",
+                    "nameFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+                  }
+                ],
+                "extendedAttributes": [
+                  {
+                    "name": "email",
+                    "nameFormat": "urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+                  }
+                ]
+              },
+              "adapterMappings": [],
+              "authenticationPolicyContractAssertionMappings": [
+                {
+                  "attributeSources": [],
+                  "attributeContractFulfillment": {
+                    "SAML_SUBJECT": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "subject"
+                    },
+                    "email": {
+                      "source": {
+                        "type": "AUTHENTICATION_POLICY_CONTRACT"
+                      },
+                      "value": "email"
+                    }
+                  },
+                  "issuanceCriteria": {
+                    "conditionalCriteria": []
+                  },
+                  "authenticationPolicyContractRef": {
+                    "id": "MKPTLiN0X6aLThVn",
+                    "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/MKPTLiN0X6aLThVn"
+                  },
+                  "restrictVirtualEntityIds": false,
+                  "restrictedVirtualEntityIds": [],
+                  "abortSsoTransactionAsFailSafe": false
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/session/settings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "trackAdapterSessionsForLogout": false,
+            "revokeUserSessionOnLogout": true,
+            "sessionRevocationLifetime": 490
+          }
+        ]
+      },
+      {
+        "resourceType": "/session/applicationSessionPolicy",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "idleTimeoutMins": 60,
+            "maxTimeoutMins": 480
+          }
+        ]
+      },
+      {
+        "resourceType": "/session/authenticationSessionPolicies/global",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "enableSessions": false,
+            "persistentSessions": false,
+            "idleTimeoutMins": 60,
+            "idleTimeoutDisplayUnit": "MINUTES",
+            "maxTimeoutMins": 480,
+            "maxTimeoutDisplayUnit": "MINUTES"
+          }
+        ]
+      },
+      {
+        "resourceType": "/oauth/authServerSettings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "defaultScopeDescription": "",
+            "scopes": [],
+            "scopeGroups": [],
+            "exclusiveScopes": [],
+            "exclusiveScopeGroups": [],
+            "authorizationCodeTimeout": 60,
+            "authorizationCodeEntropy": 30,
+            "persistentGrantLifetime": -1,
+            "persistentGrantLifetimeUnit": "DAYS",
+            "persistentGrantIdleTimeout": 30,
+            "persistentGrantIdleTimeoutTimeUnit": "DAYS",
+            "refreshTokenLength": 42,
+            "rollRefreshTokenValues": false,
+            "refreshRollingInterval": 0,
+            "persistentGrantReuseGrantTypes": [
+              "IMPLICIT"
+            ],
+            "persistentGrantContract": {
+              "extendedAttributes": [],
+              "coreAttributes": [
+                {
+                  "name": "USER_KEY"
+                },
+                {
+                  "name": "USER_NAME"
+                }
+              ]
+            },
+            "bypassAuthorizationForApprovedGrants": false,
+            "allowUnidentifiedClientROCreds": false,
+            "allowUnidentifiedClientExtensionGrants": false,
+            "tokenEndpointBaseUrl": "",
+            "userAuthorizationUrl": "",
+            "registeredAuthorizationPath": "",
+            "pendingAuthorizationTimeout": 600,
+            "bypassActivationCodeConfirmation": false,
+            "devicePollingInterval": 5,
+            "userAuthorizationConsentPageSetting": "INTERNAL",
+            "atmIdForOAuthGrantManagement": "",
+            "scopeForOAuthGrantManagement": "",
+            "allowedOrigins": [],
+            "trackUserSessionsForLogout": false
+          }
+        ]
+      },
+      {
+        "resourceType": "/oauth/cibaServerPolicy/settings",
+        "operationType": "SAVE",
+        "items": [
+          {}
+        ]
+      },
+      {
+        "resourceType": "/oauth/openIdConnect/settings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "sessionSettings": {
+              "trackUserSessionsForLogout": false,
+              "revokeUserSessionOnLogout": true,
+              "sessionRevocationLifetime": 490
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "/oauth/tokenExchange/processor/settings",
+        "operationType": "SAVE",
+        "items": [
+          {}
+        ]
+      },
+      {
+        "resourceType": "/oauth/tokenExchange/generator/settings",
+        "operationType": "SAVE",
+        "items": [
+          {}
+        ]
+      },
+      {
+        "resourceType": "/oauth/clientSettings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "clientMetadata": []
+          }
+        ]
+      },
+      {
+        "resourceType": "/authenticationSelectors",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "id": "NetworkCheck",
+            "name": "Network Check",
+            "pluginDescriptorRef": {
+              "id": "com.pingidentity.pf.selectors.cidr.CIDRAdapterSelector",
+              "location": "https://localhost:9999/pf-admin-api/v1/authenticationSelectors/descriptors/com.pingidentity.pf.selectors.cidr.CIDRAdapterSelector"
+            },
+            "configuration": {
+              "tables": [
+                {
+                  "name": "Networks",
+                  "rows": [
+                    {
+                      "fields": [
+                        {
+                          "name": "Network Range (CIDR notation)",
+                          "value": "172.28.0.1/32"
+                        }
+                      ],
+                      "defaultRow": false
+                    }
+                  ]
+                }
+              ],
+              "fields": [
+                {
+                  "name": "Result Attribute Name",
+                  "value": ""
+                }
+              ]
+            },
+            "attributeContract": {}
+          }
+        ]
+      },
+      {
+        "resourceType": "/authenticationApi/settings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "apiEnabled": false,
+            "enableApiDescriptions": true
+          }
+        ]
+      },
+      {
+        "resourceType": "/authenticationPolicies/default",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "failIfNoSelection": false,
+            "authnSelectionTrees": [
+              {
+                "rootNode": {
+                  "action": {
+                    "type": "AUTHN_SOURCE",
+                    "authenticationSource": {
+                      "type": "IDP_ADAPTER",
+                      "sourceRef": {
+                        "id": "PingOneForm",
+                        "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingOneForm"
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "action": {
+                        "type": "DONE",
+                        "context": "Fail"
+                      }
+                    },
+                    {
+                      "action": {
+                        "type": "APC_MAPPING",
+                        "context": "Success",
+                        "authenticationPolicyContractRef": {
+                          "id": "Oxa3QNmv4T9188Yo",
+                          "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/Oxa3QNmv4T9188Yo"
+                        },
+                        "attributeMapping": {
+                          "attributeSources": [],
+                          "attributeContractFulfillment": {
+                            "subject": {
+                              "source": {
+                                "type": "ADAPTER",
+                                "id": "PingOneForm"
+                              },
+                              "value": "username"
+                            },
+                            "email": {
+                              "source": {
+                                "type": "ADAPTER",
+                                "id": "PingOneForm"
+                              },
+                              "value": "email"
+                            }
+                          },
+                          "issuanceCriteria": {
+                            "conditionalCriteria": []
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "name": "Single Factor",
+                "enabled": true
+              },
+              {
+                "rootNode": {
+                  "action": {
+                    "type": "AUTHN_SOURCE",
+                    "authenticationSource": {
+                      "type": "IDP_ADAPTER",
+                      "sourceRef": {
+                        "id": "PingOneForm",
+                        "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingOneForm"
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "action": {
+                        "type": "DONE",
+                        "context": "Fail"
+                      }
+                    },
+                    {
+                      "action": {
+                        "type": "AUTHN_SOURCE",
+                        "context": "Success",
+                        "authenticationSource": {
+                          "type": "IDP_ADAPTER",
+                          "sourceRef": {
+                            "id": "PingID",
+                            "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingID"
+                          }
+                        },
+                        "inputUserIdMapping": {
+                          "source": {
+                            "type": "ADAPTER",
+                            "id": "PingOneForm"
+                          },
+                          "value": "username"
+                        }
+                      },
+                      "children": [
+                        {
+                          "action": {
+                            "type": "DONE",
+                            "context": "Fail"
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "APC_MAPPING",
+                            "context": "Success",
+                            "authenticationPolicyContractRef": {
+                              "id": "99lAfsShaBqWf9et",
+                              "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/99lAfsShaBqWf9et"
+                            },
+                            "attributeMapping": {
+                              "attributeSources": [],
+                              "attributeContractFulfillment": {
+                                "subject": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "PingOneForm"
+                                  },
+                                  "value": "username"
+                                },
+                                "email": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "PingOneForm"
+                                  },
+                                  "value": "email"
+                                }
+                              },
+                              "issuanceCriteria": {
+                                "conditionalCriteria": []
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Multi Factor",
+                "enabled": true
+              },
+              {
+                "rootNode": {
+                  "action": {
+                    "type": "AUTHN_SOURCE",
+                    "authenticationSource": {
+                      "type": "IDP_ADAPTER",
+                      "sourceRef": {
+                        "id": "PingOneForm",
+                        "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingOneForm"
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "action": {
+                        "type": "DONE",
+                        "context": "Fail"
+                      }
+                    },
+                    {
+                      "action": {
+                        "type": "AUTHN_SOURCE",
+                        "context": "Success",
+                        "authenticationSource": {
+                          "type": "IDP_ADAPTER",
+                          "sourceRef": {
+                            "id": "Iovation",
+                            "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/Iovation"
+                          }
+                        },
+                        "inputUserIdMapping": {
+                          "source": {
+                            "type": "ADAPTER",
+                            "id": "PingOneForm"
+                          },
+                          "value": "username"
+                        },
+                        "attributeRules": {
+                          "items": [
+                            {
+                              "attributeName": "transactionRiskResult",
+                              "condition": "EQUALS",
+                              "expectedValue": "allow",
+                              "result": "allow"
+                            },
+                            {
+                              "attributeName": "transactionRiskResult",
+                              "condition": "EQUALS",
+                              "expectedValue": "review",
+                              "result": "review"
+                            },
+                            {
+                              "attributeName": "transactionRiskResult",
+                              "condition": "EQUALS",
+                              "expectedValue": "deny",
+                              "result": "deny"
+                            }
+                          ],
+                          "fallbackToSuccess": false
+                        }
+                      },
+                      "children": [
+                        {
+                          "action": {
+                            "type": "DONE",
+                            "context": "Fail"
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "APC_MAPPING",
+                            "context": "allow",
+                            "authenticationPolicyContractRef": {
+                              "id": "MKPTLiN0X6aLThVn",
+                              "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/MKPTLiN0X6aLThVn"
+                            },
+                            "attributeMapping": {
+                              "attributeSources": [],
+                              "attributeContractFulfillment": {
+                                "subject": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "PingOneForm"
+                                  },
+                                  "value": "username"
+                                },
+                                "email": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "PingOneForm"
+                                  },
+                                  "value": "email"
+                                }
+                              },
+                              "issuanceCriteria": {
+                                "conditionalCriteria": []
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "AUTHN_SOURCE",
+                            "context": "review",
+                            "authenticationSource": {
+                              "type": "IDP_ADAPTER",
+                              "sourceRef": {
+                                "id": "PingID",
+                                "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingID"
+                              }
+                            },
+                            "inputUserIdMapping": {
+                              "source": {
+                                "type": "ADAPTER",
+                                "id": "PingOneForm"
+                              },
+                              "value": "username"
+                            }
+                          },
+                          "children": [
+                            {
+                              "action": {
+                                "type": "DONE",
+                                "context": "Fail"
+                              }
+                            },
+                            {
+                              "action": {
+                                "type": "APC_MAPPING",
+                                "context": "Success",
+                                "authenticationPolicyContractRef": {
+                                  "id": "MKPTLiN0X6aLThVn",
+                                  "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/MKPTLiN0X6aLThVn"
+                                },
+                                "attributeMapping": {
+                                  "attributeSources": [],
+                                  "attributeContractFulfillment": {
+                                    "subject": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "PingOneForm"
+                                      },
+                                      "value": "username"
+                                    },
+                                    "email": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "PingOneForm"
+                                      },
+                                      "value": "email"
+                                    }
+                                  },
+                                  "issuanceCriteria": {
+                                    "conditionalCriteria": []
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "action": {
+                            "type": "DONE",
+                            "context": "deny"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Iovation",
+                "enabled": true
+              },
+              {
+                "rootNode": {
+                  "action": {
+                    "type": "AUTHN_SOURCE",
+                    "authenticationSource": {
+                      "type": "IDP_ADAPTER",
+                      "sourceRef": {
+                        "id": "BehavioSecForm",
+                        "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/BehavioSecForm"
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "action": {
+                        "type": "DONE",
+                        "context": "Fail"
+                      }
+                    },
+                    {
+                      "action": {
+                        "type": "AUTHN_SOURCE",
+                        "context": "Success",
+                        "authenticationSource": {
+                          "type": "IDP_ADAPTER",
+                          "sourceRef": {
+                            "id": "BehavioSec",
+                            "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/BehavioSec"
+                          }
+                        },
+                        "inputUserIdMapping": {
+                          "source": {
+                            "type": "ADAPTER",
+                            "id": "BehavioSecForm"
+                          },
+                          "value": "bdata"
+                        },
+                        "attributeRules": {
+                          "items": [
+                            {
+                              "attributeName": "policy",
+                              "condition": "EQUALS",
+                              "expectedValue": "true",
+                              "result": "true"
+                            },
+                            {
+                              "attributeName": "policy",
+                              "condition": "EQUALS",
+                              "expectedValue": "false",
+                              "result": "false"
+                            }
+                          ],
+                          "fallbackToSuccess": false
+                        }
+                      },
+                      "children": [
+                        {
+                          "action": {
+                            "type": "DONE",
+                            "context": "Fail"
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "APC_MAPPING",
+                            "context": "true",
+                            "authenticationPolicyContractRef": {
+                              "id": "Z20PsOjmC5UwwkjZ",
+                              "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/Z20PsOjmC5UwwkjZ"
+                            },
+                            "attributeMapping": {
+                              "attributeSources": [],
+                              "attributeContractFulfillment": {
+                                "subject": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "BehavioSecForm"
+                                  },
+                                  "value": "username"
+                                },
+                                "email": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "BehavioSecForm"
+                                  },
+                                  "value": "email"
+                                }
+                              },
+                              "issuanceCriteria": {
+                                "conditionalCriteria": []
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "AUTHN_SOURCE",
+                            "context": "false",
+                            "authenticationSource": {
+                              "type": "IDP_ADAPTER",
+                              "sourceRef": {
+                                "id": "PingID",
+                                "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingID"
+                              }
+                            },
+                            "inputUserIdMapping": {
+                              "source": {
+                                "type": "ADAPTER",
+                                "id": "BehavioSecForm"
+                              },
+                              "value": "username"
+                            }
+                          },
+                          "children": [
+                            {
+                              "action": {
+                                "type": "DONE",
+                                "context": "Fail"
+                              }
+                            },
+                            {
+                              "action": {
+                                "type": "APC_MAPPING",
+                                "context": "Success",
+                                "authenticationPolicyContractRef": {
+                                  "id": "Z20PsOjmC5UwwkjZ",
+                                  "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/Z20PsOjmC5UwwkjZ"
+                                },
+                                "attributeMapping": {
+                                  "attributeSources": [],
+                                  "attributeContractFulfillment": {
+                                    "subject": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "BehavioSecForm"
+                                      },
+                                      "value": "username"
+                                    },
+                                    "email": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "BehavioSecForm"
+                                      },
+                                      "value": "email"
+                                    }
+                                  },
+                                  "issuanceCriteria": {
+                                    "conditionalCriteria": []
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "BehavioSec",
+                "enabled": true
+              },
+              {
+                "rootNode": {
+                  "action": {
+                    "type": "AUTHN_SOURCE",
+                    "authenticationSource": {
+                      "type": "IDP_ADAPTER",
+                      "sourceRef": {
+                        "id": "BehavioSecForm",
+                        "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/BehavioSecForm"
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "action": {
+                        "type": "DONE",
+                        "context": "Fail"
+                      }
+                    },
+                    {
+                      "action": {
+                        "type": "AUTHN_SOURCE",
+                        "context": "Success",
+                        "authenticationSource": {
+                          "type": "IDP_ADAPTER",
+                          "sourceRef": {
+                            "id": "BehavioSec",
+                            "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/BehavioSec"
+                          }
+                        },
+                        "inputUserIdMapping": {
+                          "source": {
+                            "type": "ADAPTER",
+                            "id": "BehavioSecForm"
+                          },
+                          "value": "bdata"
+                        },
+                        "attributeRules": {
+                          "items": [
+                            {
+                              "attributeName": "policy",
+                              "condition": "EQUALS",
+                              "expectedValue": "true",
+                              "result": "true"
+                            },
+                            {
+                              "attributeName": "policy",
+                              "condition": "EQUALS",
+                              "expectedValue": "false",
+                              "result": "false"
+                            }
+                          ],
+                          "fallbackToSuccess": false
+                        }
+                      },
+                      "children": [
+                        {
+                          "action": {
+                            "type": "DONE",
+                            "context": "Fail"
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "AUTHN_SOURCE",
+                            "context": "true",
+                            "authenticationSource": {
+                              "type": "IDP_ADAPTER",
+                              "sourceRef": {
+                                "id": "Iovation",
+                                "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/Iovation"
+                              }
+                            },
+                            "inputUserIdMapping": {
+                              "source": {
+                                "type": "ADAPTER",
+                                "id": "BehavioSecForm"
+                              },
+                              "value": "username"
+                            },
+                            "attributeRules": {
+                              "items": [
+                                {
+                                  "attributeName": "transactionRiskResult",
+                                  "condition": "EQUALS",
+                                  "expectedValue": "allow",
+                                  "result": "allow"
+                                },
+                                {
+                                  "attributeName": "transactionRiskResult",
+                                  "condition": "EQUALS",
+                                  "expectedValue": "review",
+                                  "result": "review"
+                                },
+                                {
+                                  "attributeName": "transactionRiskResult",
+                                  "condition": "EQUALS",
+                                  "expectedValue": "deny",
+                                  "result": "deny"
+                                }
+                              ],
+                              "fallbackToSuccess": false
+                            }
+                          },
+                          "children": [
+                            {
+                              "action": {
+                                "type": "DONE",
+                                "context": "Fail"
+                              }
+                            },
+                            {
+                              "action": {
+                                "type": "APC_MAPPING",
+                                "context": "allow",
+                                "authenticationPolicyContractRef": {
+                                  "id": "NWKhBiRnEj86jWpP",
+                                  "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/NWKhBiRnEj86jWpP"
+                                },
+                                "attributeMapping": {
+                                  "attributeSources": [],
+                                  "attributeContractFulfillment": {
+                                    "subject": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "BehavioSecForm"
+                                      },
+                                      "value": "username"
+                                    },
+                                    "email": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "BehavioSecForm"
+                                      },
+                                      "value": "email"
+                                    }
+                                  },
+                                  "issuanceCriteria": {
+                                    "conditionalCriteria": []
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "action": {
+                                "type": "AUTHN_SOURCE",
+                                "context": "review",
+                                "authenticationSource": {
+                                  "type": "IDP_ADAPTER",
+                                  "sourceRef": {
+                                    "id": "PingID",
+                                    "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingID"
+                                  }
+                                },
+                                "inputUserIdMapping": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "BehavioSecForm"
+                                  },
+                                  "value": "username"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "action": {
+                                    "type": "DONE",
+                                    "context": "Fail"
+                                  }
+                                },
+                                {
+                                  "action": {
+                                    "type": "APC_MAPPING",
+                                    "context": "Success",
+                                    "authenticationPolicyContractRef": {
+                                      "id": "NWKhBiRnEj86jWpP",
+                                      "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/NWKhBiRnEj86jWpP"
+                                    },
+                                    "attributeMapping": {
+                                      "attributeSources": [],
+                                      "attributeContractFulfillment": {
+                                        "subject": {
+                                          "source": {
+                                            "type": "ADAPTER",
+                                            "id": "BehavioSecForm"
+                                          },
+                                          "value": "username"
+                                        },
+                                        "email": {
+                                          "source": {
+                                            "type": "ADAPTER",
+                                            "id": "BehavioSecForm"
+                                          },
+                                          "value": "email"
+                                        }
+                                      },
+                                      "issuanceCriteria": {
+                                        "conditionalCriteria": []
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "action": {
+                                "type": "DONE",
+                                "context": "deny"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "action": {
+                            "type": "AUTHN_SOURCE",
+                            "context": "false",
+                            "authenticationSource": {
+                              "type": "IDP_ADAPTER",
+                              "sourceRef": {
+                                "id": "PingID",
+                                "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingID"
+                              }
+                            },
+                            "inputUserIdMapping": {
+                              "source": {
+                                "type": "ADAPTER",
+                                "id": "BehavioSecForm"
+                              },
+                              "value": "username"
+                            }
+                          },
+                          "children": [
+                            {
+                              "action": {
+                                "type": "DONE",
+                                "context": "Fail"
+                              }
+                            },
+                            {
+                              "action": {
+                                "type": "AUTHN_SOURCE",
+                                "context": "Success",
+                                "authenticationSource": {
+                                  "type": "IDP_ADAPTER",
+                                  "sourceRef": {
+                                    "id": "Iovation",
+                                    "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/Iovation"
+                                  }
+                                },
+                                "inputUserIdMapping": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "BehavioSecForm"
+                                  },
+                                  "value": "username"
+                                },
+                                "attributeRules": {
+                                  "items": [
+                                    {
+                                      "attributeName": "transactionRiskResult",
+                                      "condition": "EQUALS",
+                                      "expectedValue": "allow",
+                                      "result": "allow"
+                                    },
+                                    {
+                                      "attributeName": "transactionRiskResult",
+                                      "condition": "EQUALS",
+                                      "expectedValue": "review",
+                                      "result": "review"
+                                    },
+                                    {
+                                      "attributeName": "transactionRiskResult",
+                                      "condition": "EQUALS",
+                                      "expectedValue": "deny",
+                                      "result": "deny"
+                                    }
+                                  ],
+                                  "fallbackToSuccess": false
+                                }
+                              },
+                              "children": [
+                                {
+                                  "action": {
+                                    "type": "DONE",
+                                    "context": "Fail"
+                                  }
+                                },
+                                {
+                                  "action": {
+                                    "type": "APC_MAPPING",
+                                    "context": "allow",
+                                    "authenticationPolicyContractRef": {
+                                      "id": "NWKhBiRnEj86jWpP",
+                                      "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/NWKhBiRnEj86jWpP"
+                                    },
+                                    "attributeMapping": {
+                                      "attributeSources": [],
+                                      "attributeContractFulfillment": {
+                                        "subject": {
+                                          "source": {
+                                            "type": "ADAPTER",
+                                            "id": "BehavioSecForm"
+                                          },
+                                          "value": "username"
+                                        },
+                                        "email": {
+                                          "source": {
+                                            "type": "ADAPTER",
+                                            "id": "BehavioSecForm"
+                                          },
+                                          "value": "email"
+                                        }
+                                      },
+                                      "issuanceCriteria": {
+                                        "conditionalCriteria": []
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "action": {
+                                    "type": "AUTHN_SOURCE",
+                                    "context": "review",
+                                    "authenticationSource": {
+                                      "type": "IDP_ADAPTER",
+                                      "sourceRef": {
+                                        "id": "PingID",
+                                        "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingID"
+                                      }
+                                    },
+                                    "inputUserIdMapping": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "BehavioSecForm"
+                                      },
+                                      "value": "username"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "action": {
+                                        "type": "DONE",
+                                        "context": "Fail"
+                                      }
+                                    },
+                                    {
+                                      "action": {
+                                        "type": "APC_MAPPING",
+                                        "context": "Success",
+                                        "authenticationPolicyContractRef": {
+                                          "id": "NWKhBiRnEj86jWpP",
+                                          "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/NWKhBiRnEj86jWpP"
+                                        },
+                                        "attributeMapping": {
+                                          "attributeSources": [],
+                                          "attributeContractFulfillment": {
+                                            "subject": {
+                                              "source": {
+                                                "type": "ADAPTER",
+                                                "id": "BehavioSecForm"
+                                              },
+                                              "value": "username"
+                                            },
+                                            "email": {
+                                              "source": {
+                                                "type": "ADAPTER",
+                                                "id": "BehavioSecForm"
+                                              },
+                                              "value": "email"
+                                            }
+                                          },
+                                          "issuanceCriteria": {
+                                            "conditionalCriteria": []
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "action": {
+                                    "type": "DONE",
+                                    "context": "deny"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "BehavioSec and Iovation",
+                "enabled": true
+              },
+              {
+                "rootNode": {
+                  "action": {
+                    "type": "AUTHN_SELECTOR",
+                    "authenticationSelectorRef": {
+                      "id": "NetworkCheck",
+                      "location": "https://localhost:9999/pf-admin-api/v1/authenticationSelectors/NetworkCheck"
+                    }
+                  },
+                  "children": [
+                    {
+                      "action": {
+                        "type": "AUTHN_SOURCE",
+                        "context": "No",
+                        "authenticationSource": {
+                          "type": "IDP_ADAPTER",
+                          "sourceRef": {
+                            "id": "PingOneForm",
+                            "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingOneForm"
+                          }
+                        }
+                      },
+                      "children": [
+                        {
+                          "action": {
+                            "type": "DONE",
+                            "context": "Fail"
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "AUTHN_SOURCE",
+                            "context": "Success",
+                            "authenticationSource": {
+                              "type": "IDP_ADAPTER",
+                              "sourceRef": {
+                                "id": "PingID",
+                                "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingID"
+                              }
+                            },
+                            "inputUserIdMapping": {
+                              "source": {
+                                "type": "ADAPTER",
+                                "id": "PingOneForm"
+                              },
+                              "value": "username"
+                            }
+                          },
+                          "children": [
+                            {
+                              "action": {
+                                "type": "DONE",
+                                "context": "Fail"
+                              }
+                            },
+                            {
+                              "action": {
+                                "type": "APC_MAPPING",
+                                "context": "Success",
+                                "authenticationPolicyContractRef": {
+                                  "id": "VD6CQ3SoOqWq8LPf",
+                                  "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/VD6CQ3SoOqWq8LPf"
+                                },
+                                "attributeMapping": {
+                                  "attributeSources": [],
+                                  "attributeContractFulfillment": {
+                                    "subject": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "PingOneForm"
+                                      },
+                                      "value": "username"
+                                    },
+                                    "email": {
+                                      "source": {
+                                        "type": "ADAPTER",
+                                        "id": "PingOneForm"
+                                      },
+                                      "value": "email"
+                                    }
+                                  },
+                                  "issuanceCriteria": {
+                                    "conditionalCriteria": []
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "action": {
+                        "type": "AUTHN_SOURCE",
+                        "context": "Yes",
+                        "authenticationSource": {
+                          "type": "IDP_ADAPTER",
+                          "sourceRef": {
+                            "id": "PingOneForm",
+                            "location": "https://localhost:9999/pf-admin-api/v1/idp/adapters/PingOneForm"
+                          }
+                        }
+                      },
+                      "children": [
+                        {
+                          "action": {
+                            "type": "DONE",
+                            "context": "Fail"
+                          }
+                        },
+                        {
+                          "action": {
+                            "type": "APC_MAPPING",
+                            "context": "Success",
+                            "authenticationPolicyContractRef": {
+                              "id": "VD6CQ3SoOqWq8LPf",
+                              "location": "https://localhost:9999/pf-admin-api/v1/authenticationPolicyContracts/VD6CQ3SoOqWq8LPf"
+                            },
+                            "attributeMapping": {
+                              "attributeSources": [],
+                              "attributeContractFulfillment": {
+                                "subject": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "PingOneForm"
+                                  },
+                                  "value": "username"
+                                },
+                                "email": {
+                                  "source": {
+                                    "type": "ADAPTER",
+                                    "id": "PingOneForm"
+                                  },
+                                  "value": "email"
+                                }
+                              },
+                              "issuanceCriteria": {
+                                "conditionalCriteria": []
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "name": "Network Check",
+                "enabled": true
+              }
+            ],
+            "defaultAuthenticationSources": [],
+            "trackedHttpParameters": []
+          }
+        ]
+      },
+      {
+        "resourceType": "/authenticationPolicies/settings",
+        "operationType": "SAVE",
+        "items": [
+          {
+            "enableIdpAuthnSelection": true,
+            "enableSpAuthnSelection": false
+          }
+        ]
+      }
+    ]
+  }
