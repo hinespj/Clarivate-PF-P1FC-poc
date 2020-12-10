@@ -1,10 +1,8 @@
-helm install p1-plus-hines pingidentity/devops -f p1-plus-pf.yaml
+helm install p1-plus-hines pingidentity/ping-devops -f p1-plus-pf.yaml
 
 helm uninstall p1-plus-hines
 
 
 git add .
-
 git commit -m "Add existing file"
-
 git push
