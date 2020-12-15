@@ -1,5 +1,7 @@
 helm install p1-plus-hines pingidentity/ping-devops -f p1-plus-pf.yaml
 
+helm upgrade --install p1-plus-hines pingidentity/ping-devops -f p1-plus-pf.yaml
+
 helm uninstall p1-plus-hines
 
 
