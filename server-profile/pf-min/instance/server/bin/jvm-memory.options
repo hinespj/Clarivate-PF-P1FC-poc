@@ -5,9 +5,9 @@
 #
 
 #Minimum heap size
--Xms512m
+-Xms1024m
 #Maximum heap size
--Xmx1024m
+-Xmx2048m
 #Minimum size for the Young Gen space
 -XX:NewSize=256m
 #Maximum size for the Young Gen space
