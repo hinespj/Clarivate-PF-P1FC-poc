@@ -35,7 +35,7 @@ global:
 ############################################################
 pingfederate-admin:
   image:
-    tag: edge  # Uses images with the "edge" tag
+    tag: 10.2.0-edge  # Uses images with the "edge" tag
     pullPolicy: Always   
   services:
     admin:
@@ -53,8 +53,7 @@ pingfederate-admin:
   envs:
     PF_LOG_LEVEL: DEBUG
     PING_IDENTITY_PASSWORD: 2FederateM0re
-    # SERVER_PROFILE_URL: https://github.com/hinespj/p1-sso-policy.git
-    SERVER_PROFILE_URL: https://github.com/hinespj/advanced-workforce-poc.git
+    SERVER_PROFILE_URL: https://github.com/hinespj/Clarivate-PF-P1FC-poc.git
     SERVER_PROFILE_PATH: server-profile/pf-min
 
 ############################################################
@@ -77,6 +76,7 @@ pingfederate-admin:
     PF_OIDC_TOKEN_ENDPOINT: https://sso.anycompanyonline.net/as/token
     PF_OIDC_USER_INFO_ENDPOINT: https://sso.anycompanyonline.net/as/userinfo
     PF_OIDC_USER_SESSION_ENDPOINT: https://sso.anycompanyonline.net/as/signoff
+    PF_OIDC_END_SESSION_ENDPOINT: https://sso.anycompanyonline.net/as/signoff
     PF_OIDC_ISSUER: https://sso.anycompanyonline.net/as
     PF_OIDC_SCOPES: openid email profile 
     PF_OIDC_ACR_VALUES: ""
@@ -93,15 +93,13 @@ pingfederate-admin:
     
 pingfederate-engine:
   image:
-    tag: edge  # Uses images with the "edge" tag 
+    tag: 10.2.0-edge  # Uses images with the "edge" tag 
     pullPolicy: Always 
   enabled: true
   envs:
     PF_LOG_LEVEL: DEBUG
     PING_IDENTITY_PASSWORD: 2FederateM0re
-    # SERVER_PROFILE_URL: https://github.com/hinespj/p1-sso-policy.git
-    SERVER_PROFILE_URL: https://github.com/hinespj/advanced-workforce-poc.git
+    SERVER_PROFILE_URL: https://github.com/hinespj/Clarivate-PF-P1FC-poc.git
     SERVER_PROFILE_PATH: server-profile/pf-min
     PF_ADMIN_PORT: "443"
-
     PF_ADMIN_PUBLIC_HOSTNAME: pingfederate-admin-p1-plus-hines.ping-devops.com

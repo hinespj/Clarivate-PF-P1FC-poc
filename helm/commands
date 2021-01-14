@@ -8,3 +8,14 @@ helm uninstall p1-plus-hines
 git add .
 git commit -m "Add existing file"
 git push
+
+
+https://pingfederate-engine-p1-plus-hines.ping-devops.com/sp/ACS.saml2
+
+https://pingfederate-engine-p1-plus-hines.ping-devops.com:443
+
+pingfederate-engine-p1-plus-hines.ping-devops.com:443
+
+https://auth.pingone.com/965745db-2c89-4363-a956-536aca8f17cd
+
+https://pingfederate-engine-p1-plus-hines.ping-devops.com/pf/federation_metadata.ping?PartnerIdpId=https://auth.pingone.com/965745db-2c89-4363-a956-536aca8f17cd
